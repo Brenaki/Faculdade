@@ -24,6 +24,8 @@ void arqWriteWord(){
        fclose(f);
     }
 
+    printf("Palavra adicionada com sucesso!");
+
 }
 
 void read(){
@@ -45,15 +47,32 @@ void read(){
     }
 }
 
+void showHangman(int life){
+    system("cls");
+    switch (life)
+    {
+    case 0:
+        printf("   ┌ ┐\n");
+        printf("      └ ┘\n");
+        printf("───┬┴┬───\n");
+        printf("        │   │\n");
+        printf("        │    │\n");
+        printf("       ┴    ┴\n");
+        break;
+    
+    default:
+        break;
+    }
+}
+
 void game(){
-    printf("JOGO LEGAL!");
+    showHangman(0);
 }
 
 int main(){
     int choose;
     do {
-        system("clear");
-        printf("\n****Bem-vindo ao Jogo da Forca\n***");
+        printf("\n****Bem-vindo ao Jogo da Forca***\n");
         printf("\n1 - Inserir novas palavras\n2 - Jogar\n3 - Sair\n\n");
         scanf("%d", &choose);
         printf("\n");
