@@ -4,7 +4,7 @@ Os atributos privados diferente dos publicos, não podem ser acessados pelos obj
 
 - Exemplo:
 
-```
+```java
   public class Exemplo1 {
     private String nome;
 
@@ -25,7 +25,7 @@ Em java para que os atributos que você criou não fiquem ocupando espaço em me
 
 - Exemplo:
 
-```
+```java
   public class Exemplo2 {
     private String nome;
     private int idade;
@@ -43,7 +43,7 @@ Em java você pode criar métodos com o mesmo nome. O que diferencias eles são 
 
 - Exemplo:
 
-```
+```java
    public void metodo()
    public void metodo(int a)
    public void metodo(float a)
