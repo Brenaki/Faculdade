@@ -14,11 +14,6 @@ char b;
 	- Heterogênea(Registro/Struct)
 	- Homogêna(Vetor e Matriz)
 ### Variável - homogênea -> coleção de dados de mesmo tipo
-
-0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
-:-- | :-: | :-: | :-: | :-: | :-: | --:
-0 | 1 | 2 | 3 | 3 | 4 | 5 | 6
-
 Declaração:
 ```c
 int m[8];
@@ -30,7 +25,7 @@ m[4] = 3; // adiciona o numero 3 no indice 4 do vetor.
 
 ```c
 int m[8] = {0,1,2,3};
-// ou de ser adicionado valores em estruturas de repetição
+// ou os valores podem ser adicionados por meio de estruturas de repetição
 
 for(int i=0; i<8; i++){
 	m[i] = i+1;
