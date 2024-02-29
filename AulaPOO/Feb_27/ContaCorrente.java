@@ -43,6 +43,10 @@ public class ContaCorrente {
 		return this.nome;
 	}
 
+	public double getSaldo() {
+		return this.saldo;
+	}
+
 	// Funções do Banco
 	public void sacar(double valor) {
 		if (valor <= saldo)
