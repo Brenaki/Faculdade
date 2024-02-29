@@ -14,10 +14,12 @@ add $t0, $t1, $t2
 > $t0 =  $t1 + $t2
 
 add -> código cp
+
 $t0, $t1, $t2 -> operadores
 
 ## Instruções load/store
 lw (*l*oad *w*ord)	|	lb (*l*oad *b*yte)
+
 sw (*s*tore *w*ord)	|	sb (*s*tore *b*yte)
 
 ### Exemplos
@@ -28,6 +30,7 @@ sw $t0, 0($s0)
 ```
 
 > $t1 = MP[$s1+0]
+
 > MP[$s0+0] = $t0
 
 $t1 -> registrador de destino
@@ -68,7 +71,9 @@ $s1 -> endereço base
 	lw $t0, 8($s0)
 	lb $t1, 2($s1)
 ```
+
 > lw $t0, 8($s0) # a = d[2]
+
 > lb $t1, 2($s1) # b = e[2]
 
 - Dúvida
@@ -109,8 +114,9 @@ $s1 -> endereço base
 	
 	lw $t0, 0($s0)
 ```
+
 > lw $t1, 1($s0) # Processador abandona
+
 > add $s0, $s0, 2 # Processador vai para 2 endereços para cima, porém não executa porque não é mutiplo de 4.
 
-> lw $t2, -2($s0) # Processador executa devido o ponteiro estar na segunda casa. 
-
+> lw $t2, -2($s0) # Processador executa devido o ponteiro estar na segunda casa.
