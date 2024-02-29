@@ -111,5 +111,6 @@ $s1 -> endereço base
 ```
 > lw $t1, 1($s0) # Processador abandona
 > add $s0, $s0, 2 # Processador vai para 2 endereços para cima, porém não executa porque não é mutiplo de 4.
+
 > lw $t2, -2($s0) # Processador executa devido o ponteiro estar na segunda casa. 
 
