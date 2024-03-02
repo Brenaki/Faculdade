@@ -1,16 +1,15 @@
 # Exercícios
 
-1. Escreva um programa no qual o usuário digite 10 números inteiros que serão armazenados em um vetor. Sobre esse vetor:
-
-* Imprima em ordem direta (do elemento na posição 0 até o elemento na posição 9)
-* Imprima em ordem inversa (do elemento na posição 9 até o elemento na posição 0)
-* Procure o maior elemento do vetor
-* Procure o menor elemento do vetor
-* Calcule quantas vezes e em que posições do vetor aparece um determinado número digitado pelo usuário
-* Calcule a média entre os 10 valores
-
-2. Escreva um programa que defina 2 vetores de tamanho 10, A e B. Em seguida, insira 10 elementos em A. Transfira esses 10 elementos de A para B, mas em ordem inversa. Por exemplo, o elemento que estiver na primeira posição de A deverá ser inserido na última posição de B, e assim por diante. Ao final, imprima o conteúdo de B.
-3. Escreva um programa que defina 2 vetores de tamanho 10, A e B, e insira 10 elementos em A. Em seguida, digite um valor qualquer, e todos os números que forem maiores do que esse valor devem ser transferidos de A para B (sem deixar espaços em branco em B). Ao final, imprima o conteúdo de B.
+- Escreva um programa no qual o usuário digite 10 números inteiros que serão armazenados em um vetor. Sobre esse vetor:
+  - a. Imprima em ordem direta (do elemento na posição 0 até o elemento na posição 9)
+  - b. Imprima em ordem inversa (do elemento na posição 9 até o elemento na posição 0)
+  - c. Procure o maior elemento do vetor
+  - d. Procure o menor elemento do vetor
+  - e. Calcule quantas vezes e em que posições do vetor aparece um determinado número digitado pelo usuário
+  - f. Calcule a média entre os 10 valores
+    
+- Escreva um programa que defina 2 vetores de tamanho 10, A e B. Em seguida, insira 10 elementos em A. Transfira esses 10 elementos de A para B, mas em ordem inversa. Por exemplo, o elemento que estiver na primeira posição de A deverá ser inserido na última posição de B, e assim por diante. Ao final, imprima o conteúdo de B.
+- Escreva um programa que defina 2 vetores de tamanho 10, A e B, e insira 10 elementos em A. Em seguida, digite um valor qualquer, e todos os números que forem maiores do que esse valor devem ser transferidos de A para B (sem deixar espaços em branco em B). Ao final, imprima o conteúdo de B.
 
 ## Requisitos
 
