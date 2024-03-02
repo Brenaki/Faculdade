@@ -21,7 +21,7 @@
 - (9) .data
 - (10) .text
 
-- **preencha** as lacunas abaixo, conforme o termo acima mais adequado:
+#### **preencha** as lacunas abaixo, conforme o termo acima mais adequado:
 
 - (4) formato de representação de words em memória
 - (6) pseudo-instrução
