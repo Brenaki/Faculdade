@@ -2,37 +2,37 @@
 
 ## Exercícios
 
-[x] 4.1
-[x] [4.2](./ex4.2.asm "Subtração de variaveis")
-[x] [4.3](./ex4.3.asm "Fazer indices impares receberem valores de uma variavel")
-[x] [4.4](./ex4.4.asm "Qual é o resultado de uma variavel?")
-[x] [4.5](./ex4.5.asm "Codígo Assembly com perguntas a serem respondidas")
+- [x] 4.1
+- [x] [4.2](./ex4.2.asm "Subtração de variaveis")
+- [x] [4.3](./ex4.3.asm "Fazer indices impares receberem valores de uma variavel")
+- [x] [4.4](./ex4.4.asm "Qual é o resultado de uma variavel?")
+- [x] [4.5](./ex4.5.asm "Codígo Assembly com perguntas a serem respondidas")
 
 ### Exercício 4.1 - Relacione os termos seguir
 
-(1) 1w
-(2) deslocamento (offset)
-(3) registrador de referência (ponteiro) para acesso à memória em loads ou stores
-(4) little endian
-(5) imediato
-(6) la(load addrees)
-(7) addi $t0, $t1, 32
-(8) armazenamento de 1 Bytes em memória
-(9) .data
-(10) .text
+- (1) 1w
+- (2) deslocamento (offset)
+- (3) registrador de referência (ponteiro) para acesso à memória em loads ou stores
+- (4) little endian
+- (5) imediato
+- (6) la(load addrees)
+- (7) addi $t0, $t1, 32
+- (8) armazenamento de 1 Bytes em memória
+- (9) .data
+- (10) .text
 
 - **preencha** as lacunas abaixo, conforme o termo acima mais adequado:
 
-(4) formato de representação de words em memória
-(6) pseudo-instrução
-(7) exemplo de instrução que usa um operando imediato
-(1) load word
-(8) `sb $t0, 3($s2)`
-(10) Informa ao montador o inicio da seção de código do programa
-(2) O valor na instrução `lw $t0, 4($s0)`
-(9) Informa ao montador o inicio da seção de dados
-(3) O registrador `$s1` na instrução `sw $t5, 0($s1)`
-(5) Valor codificado na instrução de máquina como operando
+- (4) formato de representação de words em memória
+- (6) pseudo-instrução
+- (7) exemplo de instrução que usa um operando imediato
+- (1) load word
+- (8) `sb $t0, 3($s2)`
+- (10) Informa ao montador o inicio da seção de código do programa
+- (2) O valor na instrução `lw $t0, 4($s0)`
+- (9) Informa ao montador o inicio da seção de dados
+- (3) O registrador `$s1` na instrução `sw $t5, 0($s1)`
+- (5) Valor codificado na instrução de máquina como operando
 
 ### Exercício 4.2 - Preencha o programa a seguir
 
