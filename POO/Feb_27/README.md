@@ -1,4 +1,6 @@
-# Atributos Privados
+# 02/27
+
+## Atributos Privados
 
 Os atributos privados diferente dos publicos, não podem ser acessados pelos objetos, então como adicionar valores nos atributos? Simples é só dar um `this.[nome do atributo]`.
 
@@ -19,7 +21,7 @@ Os atributos privados diferente dos publicos, não podem ser acessados pelos obj
   }
 ```
 
-# Método construtor
+## Método construtor
 
 Em java para que os atributos que você criou não fiquem ocupando espaço em memoria e não fiquem vazios. Você força o usuário quando cria um objeto ele inserir os dados nos atributos.
 
@@ -37,7 +39,7 @@ Em java para que os atributos que você criou não fiquem ocupando espaço em me
   }
 ```
 
-# Sobrecarga de métodos
+## Sobrecarga de métodos
 
 Em java você pode criar métodos com o mesmo nome. O que diferencias eles são os paremetros que você coloca nele. A Sobrecarga de métodos é chamada de overload.
 

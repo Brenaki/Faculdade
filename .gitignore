@@ -1,3 +1,5 @@
 ./saida
+main
 *.exe
 forca.c
+*.class
