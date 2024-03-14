@@ -78,8 +78,8 @@ slti $t1, $t0, $32 # $t1 <- 1 se $t0 < 32
 ```
 ### Exemplo de estrutura de decisão "if e else" em Assembly:
 
-[Estrutura de decisão "if e else" em Assembly](./OAC0)
+[Estrutura de decisão "if e else" em Assembly](./OAC0.png)
 
 ### Exemplo de estrutura de repetição "Enquanto" em Assembly:
 
-[Estutura de repetição "enquanto" em Assembly](./OAC1)
+[Estutura de repetição "enquanto" em Assembly](./OAC1.png)
