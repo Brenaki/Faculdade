@@ -8,7 +8,7 @@
 - Por exemplo, considere a seguinte classe para representar uma pessoa.
 
 ```java
-pubic class Pessoa {
+public class Pessoa {
 	private String nome;
 	private String cpf;
 
@@ -27,7 +27,7 @@ pubic class Pessoa {
 - O construtor da classe Funcionario deve incluir a palavra reservada super, que é responsável por executar o construtor da classe Pessoa, e deve receber como parâmetros os valores dos atributos da superclasse também.
 
 ```java
-pubic class Funcionario extends Pessoa {
+public class Funcionario extends Pessoa {
 	private double salario;
 
 	public Funcionario(String nome, String cpf, double salario){
@@ -48,7 +48,7 @@ pubic class Funcionario extends Pessoa {
 - Tudo que dor público é herdado diretamente e pode ser acessado a partir da subclasse. Por exemplo, método getNome(), que está denifido na classe Pessoa, mas pe acessado via um objeto da classe Funcionario.
 
 ```java
-pubic class Principal {
+public class Principal {
 
 	public static void main(String[] args){
 		Funcionario f = new Funcionario("Fulano", "123.456.789-00", 100);
