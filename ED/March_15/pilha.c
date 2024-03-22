@@ -37,12 +37,11 @@ int pop(){
 //imprime os valores de cada item da pilha, se nao estiver nada ele imprime o erro.
 void imprime(){
 	if(vazia() == 0){
-		printf("\nPilha está vazia\n");
 		return;
 	}
-	printf("\nPilha: ");
+	printf("\n****Pilha****\n");
 	for(int i = top; i>=0; i--){
-		printf("%d ", pilha[i]);
+		printf("|%d|\n", pilha[i]);
 	}
 	printf("\n");
 }
@@ -54,25 +53,6 @@ void topoPilha(){
 		return;
 	}
 	printf("Topo da pilha: %d", pilha[top]);
-}
-
-// verifica se expressão está com os parenteses corretos, se estiver imprime que está correto, caso contrario imprime que você não fechou todos os parenteses
-void verificaParentese(){
-	int i;
-	for(i=0; expre[i]!='\0';i++){
-		if(expre[i] == '('){
-			push(1);
-		}
-		if(expre[i] == ')'){
-			pop();
-		}
-	}
-	
-	if(vazia() == 0){
-		printf("\nOs parenteses estão corretos.");
-		return;
-	}
-	printf("\nVocê não fechou algum(ns) parenteses.");
 }
 
 // verifica se expressão está com as chaves corretos, se estiver imprime que está correto, caso contrario imprime que você não fechou todas as chaves
@@ -89,12 +69,10 @@ void verificaChaves(){
 	
 	if(vazia() == 0){
 		printf("\nAs chaves estão corretos.");
-		verificaParentese();
 		return;
 	}
-	printf("\nVocê não fechou alguma(s) chaves.");
-	pop();
-	verificaParentese();
+	printf("\nAlguma(s) chaves estão errados.");
+	return;
 }
 
 // verifica se expressão está com os cochetes corretos, se estiver imprime que está correto, caso contrario imprime que você não fechou todos os cochetes
@@ -111,12 +89,44 @@ void verificaCochetes(){
 	
 	if(vazia() == 0){
 		printf("\nOs cochetes estão corretos.");
-		verificaChaves();
+	  verificaChaves();
 		return;
 	}
-	printf("\nVocê não fechou algum(ns) cochetes.");
+	printf("\nAlgum(ns) cochetes estão errados.");
 	pop();
 	verificaChaves();
+	return;
+}
+
+// verifica se expressão está com os parenteses corretos, se estiver imprime que está correto, caso contrario imprime que você não fechou todos os parenteses
+void verificaParentese(int ex){
+	int i;
+	for(i=0; expre[i]!='\0';i++){
+		if(expre[i] == '('){
+			push(1);
+		}
+		if(expre[i] == ')'){
+			pop();
+		} 
+	}
+	if(ex == 2){
+		if(vazia() == 0){
+			printf("\nOs parenteses estão corretos.");
+			return;
+		}
+		printf("\nAlgum(ns) parenteses estão errados.");
+	}
+	else{
+		if(vazia() == 0){
+			printf("\nOs parenteses estão corretos.");
+			verificaCochetes();
+			return;
+		}
+		printf("\nAlgum(ns) parenteses estão errados.");
+		pop();
+		verificaCochetes();
+		return;
+	}
 }
 
 int main(){
@@ -140,7 +150,7 @@ int main(){
 	printf("\n\nExercício 2:\n");
 	printf("Digite uma expressão: ");
 	scanf("%s", expre);
-	verificaParentese();
+	verificaParentese(2);
 	
 	// Zera a pilha
 	top = -1;
@@ -149,6 +159,6 @@ int main(){
 	printf("\n\nExercício 3:\n");
 	printf("Digite uma expressão: ");
 	scanf("%s", expre);
-	verificaCochetes();
+	verificaParentese(3);
 	return 0;
 }
