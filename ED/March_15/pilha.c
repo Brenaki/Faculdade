@@ -1,3 +1,8 @@
+/* 	Nome dos Integrantes da dupla:
+*	João Pedro Borsato de Ramos
+*	Victor Angelo Legat Cerqueira
+*/
+
 #include <stdio.h>
 #define TAM 5
 
