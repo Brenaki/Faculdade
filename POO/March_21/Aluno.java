@@ -1,7 +1,7 @@
 public class Aluno extends Pessoa{
 	private String ra;
 	
-	public Aluno(String nome, String telefone, Data nascimento, String RA){
+	public Aluno(String nome, String telefone, Data nascimento, String ra) {
 		super(nome, telefone, nascimento);
 		this.ra = ra;
 	}
