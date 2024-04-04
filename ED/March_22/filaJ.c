@@ -35,17 +35,15 @@ void insere(int valor){
 
 //remove um elemento da fila, caso esteja vazia imprime erro.
 void remov(){
-    int valor;
     if(cont==0){
         printf("fila vazia\n");
         return;
     }
-    valor=fila[inicio];
     cont--;
-    inicio++;
     if(inicio==TAM-1){
         inicio=0;
     }
+    inicio++;
     printf("elemento removido\n");
 }
 
@@ -57,7 +55,7 @@ void imprime(){
         printf("fila vazia\n");
         return;
     }
-    while(y!=cont){
+    while(y<cont){
         printf("%d ",fila[x]);
         if(x==TAM-1){
             x=0;
