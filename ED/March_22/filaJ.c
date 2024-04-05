@@ -59,8 +59,7 @@ void imprime(){
         printf("%d ",fila[x]);
         if(x==TAM-1){
             x=0;
-        }
-        x++;
+        } else x++;
         y++;
     }
     printf("\n----------------------------\n");
