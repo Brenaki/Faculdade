@@ -68,5 +68,5 @@
 - Fatos novos - sensores
 	- R4: ~B11
 	- R5: B21
-![Tabela de BC simples](.LC0.png)
+![Tabela de BC simples](./LC0.png)
 
