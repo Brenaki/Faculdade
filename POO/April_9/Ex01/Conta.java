@@ -26,13 +26,13 @@ public class Conta{
 		return this.saldo;
 	}
 
+	public void sacar(double valor){
+		return;
+	}
+
 	public void depositar(double valor){
 		if(valor > 0) this.saldo += valor;
 		else System.out.println("O Valor não pode ser negativo");
-	}
-
-	public void sacar(double valor){
-		return;
 	}
 	
 	public String toString(){
