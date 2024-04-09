@@ -17,7 +17,8 @@ public class Conta{
 	}
 
 	public void setSaldo(double valor){
-		if(valor > 0) this.saldo -= valor;
+		if (valor > 0)
+			this.saldo = valor;
 		else System.out.println("Saldo não pode ser negativo");
 
 	}
@@ -27,7 +28,7 @@ public class Conta{
 	}
 
 	public void sacar(double valor){
-		return;
+		this.saldo -= valor;
 	}
 
 	public void depositar(double valor){
