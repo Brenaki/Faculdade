@@ -23,7 +23,7 @@ public class Funcionario extends Pessoa{
 		return this.registro;
 	}
 
-	public void setSalario(){
+	public void setSalario(double salario) {
 		if(salario <= 0) System.out.println("Salario não pode ser menor que 0");
 		else this.salario = salario;
 	}
@@ -42,7 +42,8 @@ public class Funcionario extends Pessoa{
 
 	public String toString(){
 		String temp;
-		temp = super.toString() + "\nRegistro: " + this.registro + "\nSalario: " + this.salario + "\nBonificação: " + bonificar() + "\nSalario com bonificação: " + getSalarioBonificacao();
+		temp = super.toString() + "\nRegistro: " + this.registro + "\nSalario: " + this.salario + "\nBonificação: "
+				+ bonificar() + "\nSalario com bonificação: " + getSalarioComBonificacao();
 		return temp;
 	}
 }
