@@ -50,3 +50,31 @@ f(x) | 5 | 4 | 3.2 | 3.02
 > x = 1.01 => f(x) = 3.02, isto é: x-1 = 0.01 => f(x)-3 = 0.02
 
 > x = 1.001 => f(x) = 3.002, isto é: x-1 = 0.001 => f(x)-3 = 0.002
+
+### Sigtetizando:
+
+```
+|x-1| = 0.1 => |f(x)-3| = 0.2
+|x-1| = 0.01 => |f(x)-3| = 0.02
+|x-1| = 0.001 => |f(x)-3| = 0.002
+```
+
+> Podemos tornar f(x) tão próximo de 3 quanto desejarmos desde que tomemos x suficientemente próximo de 1.
+
+- **Def.1** Seja f uma função real definida em um intervalo I, e a pertence I, possivelmente f(a) não definida. Diz-se que L é o limite de f(x) se
+
+> `0 < |x-a| < delt` => `|f(x)-L|<E`.
+
+- Denotado por:
+
+```
+lim f(x) = L
+x->a
+```
+
+```
+lim f(x) = L <=> (Todo E > 0, Existe um delt > 0 : 0 < |x-a| < delt => |f(x)-1| < E)
+x->a
+```
+
+
