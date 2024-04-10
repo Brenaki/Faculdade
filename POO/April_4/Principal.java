@@ -72,8 +72,13 @@ public class Principal {
 	System.out.println(f[i]);
     }
 
+    ControleSalario controle = new ControleSalario();
     // Somando os salarios dos funcionarios
-    
+    for (int i = 0; i < 6; i++) {
+      controle.somarSalarios(f[i]);
+    }
+    System.out.println("\nTotal Salario Base: " + controle.getTotalSalarioBase() + "\n");
+    System.out.println("\nTotal Salario Bonificado: " + controle.getTotalSalarioBonificado() + "\n");
 
   }
 }

@@ -6,8 +6,9 @@ public class ContaPoupanca extends Conta{
 	
 	public void sacar(double valor){
 		if(getSaldo() > 0 && valor < getSaldo()){
-			setSaldo(valor);
-		}
+			super.sacar(valor);
+		} else
+			System.out.println("Saldo insuficiente");
 	}
 }
 

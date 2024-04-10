@@ -6,7 +6,9 @@ public class ContaCorrente extends Conta{
 
 	public void sacar(double valor){
 		if(getSaldo() > 0 && valor < getSaldo()){
-			setSaldo(valor+1);
+			super.sacar(valor + 1);
 		}
+		else
+			System.out.println("Saldo insuficiente");
 	}
 }
