@@ -51,7 +51,7 @@ f(x) | 5 | 4 | 3.2 | 3.02
 
 > x = 1.001 => f(x) = 3.002, isto é: x-1 = 0.001 => f(x)-3 = 0.002
 
-### Sigtetizando:
+### Sitetizando:
 
 ```
 |x-1| = 0.1 => |f(x)-3| = 0.2
@@ -77,4 +77,9 @@ lim f(x) = L <=> (Todo E > 0, Existe um delt > 0 : 0 < |x-a| < delt => |f(x)-1| 
 x->a
 ```
 
+## 4. Propriedades de Limites
 
+- **Teorema 1 (Unicidade do Limite)** Se `lim f(x) = L1 \nx->a` e `lim f(x) = L2 \nx->a`, então L1 = L2.
+
+> **Demostração**: hipótese de redução por absurdo:
+>> L1 != L2
