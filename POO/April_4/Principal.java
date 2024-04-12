@@ -7,12 +7,12 @@ public class Principal {
 
     d = new Data[6];
 
-    d[0] = new Data(13, 6);
+    d[0] = new Data(13, 6, 2005);
     d[1] = new Data(24, 8, 1998);
-    d[2] = new Data(18, 9, 2005);
+    d[2] = new Data(18, 9, 2001);
     d[3] = new Data(15, 10, 1987);
     d[4] = new Data(1, 8, 1967);
-    d[5] = new Data(26, 3);
+    d[5] = new Data(26, 3, 2000);
 
     // Datas
     System.out.println("\n**Datas**");

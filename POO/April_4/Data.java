@@ -9,12 +9,6 @@ public class Data {
 		this.ano = ano;
 	}
 
-	public Data(int dia, int mes){
-		this.dia = dia;
-		this.mes = mes;
-		this.ano = 2024;
-	}
-
 	public void setDia(int dia){
 		if(dia > 31 || dia < 0) System.out.println("Dia inválido");		
 		else this.dia = dia;
