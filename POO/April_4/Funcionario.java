@@ -33,7 +33,7 @@ public class Funcionario extends Pessoa{
 	}
 
 	public double bonificar(){
-		return this.salario * 0.10;
+		return this.salario * 0.1;
 	}
 
 	public double getSalarioComBonificacao(){

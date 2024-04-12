@@ -21,7 +21,7 @@ public class Chefe extends Funcionario {
 	}
 
 	public double bonificar(){
-		return getSalario() * 0.20;
+		return getSalario() * 0.2;
 	}
 
 	public double getSalarioComBonificacao(){
