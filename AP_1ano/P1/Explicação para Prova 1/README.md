@@ -206,6 +206,7 @@ int main() {
   return 0;
 }
 ```
+[Código do números primos](https://github.com/Brenaki/Faculdade/blob/master/AP_1ano/P1/Numeros%20Primos/Primos.c)
 
 ### Teste de mesa
 
