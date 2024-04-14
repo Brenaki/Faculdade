@@ -1,4 +1,4 @@
-# Instrução de micumentação de dados em memómeria (load/stores)
+# Instrução de movimentação de dados em memória (load/stores)
 
 Processador		Memoria
 UC 	   	<----
