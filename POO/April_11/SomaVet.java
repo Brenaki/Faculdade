@@ -38,6 +38,6 @@ public class SomaVet {
 
   public static void buscaBinaria(int vet[], int valor) {
     int value = Arrays.binarySearch(vet, valor);
-    System.err.println("Valor " + valor + " encontrado na posição " + value);
+    System.out.println("Valor " + valor + " encontrado na posição " + value);
   }
 }
