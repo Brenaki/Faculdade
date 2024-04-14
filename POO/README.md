@@ -12,3 +12,4 @@
 - [Métodos e atributos estáticos](./April_2/)
 - [Trabalho de POO - Desenvolver um sistema para cadastrar funcionários e alunos de uma universidade](./April_4/)
 - [Resolução das provas de 2023 e 2024](./April_9/)
+- [Aula Prática - Métodos Estáticos](./April_11/)
