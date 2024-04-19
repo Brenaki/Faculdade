@@ -1,9 +1,3 @@
-/*
- * Nome dos Integrantes da dupla:
- * João Pedro Borsato de Ramos
- * Victor Angelo Legat Cerqueira
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,20 +9,36 @@ struct no {
 struct no *final = NULL;
 struct no *inicio = NULL;
 
-void insere(int valor){
+void insere(int valor, int lado){
 	struct no *aux;
 	aux = (struct no*)malloc(sizeof(struct no));
 	aux->valor = valor;
 	aux->prox=NULL;
-	if(inicio==NULL){
+	if(lado == 0){
+		if(inicio==NULL){
+			inicio=aux;
+			final=aux;
+			printf("\nElemento inserido!\n");
+			return;
+		}
+		inicio->prox=aux;
 		inicio=aux;
+		printf("\nElemento inserido!\n");
+		return;
+	}
+	if(lado==1){
+		if(final==NULL){
+			final=aux;
+			inicio=aux;
+			printf("\nElemento inserido!\n");
+			return;
+		}
+		final->prox=aux;
 		final=aux;
 		printf("\nElemento inserido!\n");
 		return;
 	}
-	final->prox=aux;
-	final=aux;
-	printf("\nElemento inserido!\n");
+	else printf("Lado inválido!");
 	return;
 
 }
@@ -75,12 +85,11 @@ void imprime(){
 }
 
 int main(){
-	insere(4);
-	insere(6);
-	insere(8);
-	insere(10);
+	insere(4,1);
+	insere(6,0);
+	insere(8,1);
+	insere(10,0);
 	imprime();
-	remov();
 	inicioFila();
 	imprime();
 	return 0;

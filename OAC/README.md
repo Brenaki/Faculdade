@@ -14,3 +14,4 @@ Programa que é utilizado para rodar as aplicações em `Assembly` pode ser [ins
 - [Aula Prática 05](./April_5/)
 - [Estudos para Prova 01](./April_11/)
 - [Chamadas de Sistema - system calls](./April_18/)
+- [Aula Prática - Chamadas de Sistema](./April_19/)
