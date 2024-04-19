@@ -39,7 +39,7 @@ int remov(){
 	p=inicio;
 	inicio=inicio->prox;
 	if(inicio==NULL){
-		final==NULL;
+		final = NULL;
 	}
 	free(p);
 	printf("\nElemento removido!\n");
@@ -49,6 +49,7 @@ int remov(){
 void inicioFila(){
 	if(inicio==NULL){
 		printf("\nFila vazia!\n");
+		return;
 	}
 	printf("\nInicio da fila: %d\n", inicio->valor);
 	return;
