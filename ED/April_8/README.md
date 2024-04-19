@@ -42,4 +42,4 @@ int pop(){
 }
 ```
 
-[Código da pilha com alocação dinâmica](.pilha.c)
+[Código da pilha com alocação dinâmica](./pilha.c)

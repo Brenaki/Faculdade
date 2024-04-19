@@ -14,6 +14,7 @@
 - [Lista - Estática](./March_25/)
 - [Alocação Dinâmica](./April_1/)
 - [Exercício - Lista Estática](./April_5/)
-- [Pilha com Alocação Dinâmica](.April_8/)
+- [Pilha com Alocação Dinâmica](./April_8/)
 - [Exercícios - Pilha Dinâmica](./April_12/)
 - [Estudos para primeira prova](./P1/)
+- [Exercícios - Fila Dinâmica](./April_19/)
