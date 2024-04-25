@@ -4,6 +4,7 @@
 struct no {
 	int valor;
 	struct no *prox;
+	struct no *ant;
 };
 
 struct no *final = NULL;
@@ -21,7 +22,7 @@ void insere(int valor, int lado){
 			printf("\nElemento inserido!\n");
 			return;
 		}
-		inicio->prox=aux;
+		aux->prox=inicio;
 		inicio=aux;
 		printf("\nElemento inserido!\n");
 		return;
@@ -33,6 +34,7 @@ void insere(int valor, int lado){
 			printf("\nElemento inserido!\n");
 			return;
 		}
+		aux->ant = final;
 		final->prox=aux;
 		final=aux;
 		printf("\nElemento inserido!\n");
@@ -43,7 +45,7 @@ void insere(int valor, int lado){
 
 }
 
-int remov(){
+int remov(int lado){
 	int aux;
 	struct no *p;
 	p = (struct no*)malloc(sizeof(struct no));
@@ -51,15 +53,29 @@ int remov(){
 		printf("\nFila vazia!\n");
 		return -1;
 	}
-	aux=inicio->valor;
-	p=inicio;
-	inicio=inicio->prox;
-	if(inicio==NULL){
-		final = NULL;
+	if(lado == 0){
+		aux=inicio->valor;
+		p=inicio;
+		inicio=inicio->prox;
+		if(inicio==NULL){
+			final = NULL;
+		}
+		free(p);
+		printf("\nElemento removido!\n");
+		return aux;
 	}
-	free(p);
-	printf("\nElemento removido!\n");
-	return aux;
+	if(lado == 1){
+		aux=final->valor;
+		p=final;
+		final=final->ant;
+		if(inicio==NULL){
+			final = NULL;
+		}
+		free(p);
+		printf("\nElemento removido!\n");
+		return aux;
+	}
+	else printf("Lado inválido");
 }
 
 void inicioFila(){
@@ -91,6 +107,8 @@ int main(){
 	insere(10,0);
 	imprime();
 	inicioFila();
+	remov(0);
+	remov(1);
 	imprime();
 	return 0;
 }
