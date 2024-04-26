@@ -16,3 +16,4 @@ Programa que é utilizado para rodar as aplicações em `Assembly` pode ser [ins
 - [Chamadas de Sistema - system calls](./April_18/)
 - [Aula Prática - Chamadas de Sistema](./April_19/)
 - [Vírgula flutuante (Ponto flutuante) - Float](./April_25/)
+- [Aula Prática - Float](./April_26/)

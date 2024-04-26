@@ -24,10 +24,14 @@
 		lwc1 $f4, 0($s3)
 		lwc1 $f5, 0($s4)
 		lwc1 $f6, 0($s5)
+		
+		
 		mul.s $f2, $f1, $f1
 		div.s $f12, $f0, $f2
 		swc1 $f12, 0($s2)
 		#fim do calculo do ICMC
+		
+		
 		#imprime Mensagem e valor IMC
 		li $v0, 4
 		la $a0, msg1
@@ -35,6 +39,8 @@
 	
 		li $v0, 2
 		syscall
+		
+		
 		# comparações para verificar se há obesidade
 		c.lt.s $f12, $f4
 		bc1t saida
@@ -43,6 +49,7 @@
 		bc1t grau1
 		bc1f grau2
 		
+	
 	grau1:
 		li $v0, 4
 		la $a0, msg2
@@ -52,6 +59,7 @@
 		la $a0, msg3
 		syscall
 		j saida
+	
 	grau2:
 		li $v0, 4
 		la $a0, msg2
@@ -60,6 +68,7 @@
 		li $v0, 4
 		la $a0, msg4
 		syscall
+	
 	saida:
 		li $v0, 10
 		syscall
