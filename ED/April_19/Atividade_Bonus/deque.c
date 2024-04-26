@@ -4,7 +4,6 @@
 struct no {
 	int valor;
 	struct no *prox;
-	struct no *ant;
 };
 
 struct no *final = NULL;
@@ -34,7 +33,6 @@ void insere(int valor, int lado){
 			printf("\nElemento inserido!\n");
 			return;
 		}
-		aux->ant = final;
 		final->prox=aux;
 		final=aux;
 		printf("\nElemento inserido!\n");
@@ -65,12 +63,21 @@ int remov(int lado){
 		return aux;
 	}
 	if(lado == 1){
-		aux=final->valor;
-		p=final;
-		final=final->ant;
-		if(inicio==NULL){
-			final = NULL;
+		struct no *ant = NULL;
+		p = inicio;
+		while(p->prox != NULL){
+			ant = p;
+			p = p->prox;
+			if(ant!=NULL){
+				ant->prox = NULL;
+				final = ant;
+			}
+			else{
+				inicio = NULL;
+				final = NULL;
+			}
 		}
+		aux=p->valor;
 		free(p);
 		printf("\nElemento removido!\n");
 		return aux;
@@ -108,6 +115,7 @@ int main(){
 	imprime();
 	inicioFila();
 	remov(0);
+	imprime();
 	remov(1);
 	imprime();
 	return 0;

@@ -18,3 +18,4 @@
 - [Exercícios - Pilha Dinâmica](./April_12/)
 - [Estudos para primeira prova](./P1/)
 - [Exercícios - Fila Dinâmica](./April_19/)
+- [Lista Encadeadas Ordenadas](./April_26/)
