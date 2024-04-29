@@ -17,6 +17,7 @@
 		- Sub. árvore esquerda
 		- Sub. árvore direita
 
+
 ![Representação da Raiz](ED0.png)
 
 ```
@@ -47,6 +48,7 @@ D, E, F -> Pela árvores sçao nos filhos, pois não possuem filhos
 ### Árvore binária completa
 
 - Todos os nos folhas no nível máximo
+  
 ![Representação](./ED1.png)
 
 - A **estritamente** binária
