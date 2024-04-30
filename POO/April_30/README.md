@@ -93,7 +93,7 @@ public class Adulto {
 
 - Se a classe *Principal* for declarada dentro do mesmo pacote, tem-se:
 
-```
+```Java
 package br.uepg.deinfo
 
 public class Principal{
