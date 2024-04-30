@@ -17,7 +17,7 @@ void insereLista(int valor){
 	struct no *aux;
 	aux = (struct no*)malloc(sizeof(struct no));
 	aux->valor = valor;
-	struct no *atual = NULL, *anterior;
+	struct no *atual = lista, *anterior = NULL;
 	while(atual!=NULL && atual->valor < valor){
 		anterior = atual;
 		atual = atual->prox;
@@ -44,7 +44,7 @@ void recuperaLista(int posicao){
         aux=lista;
         for(int i=1;i<=posicao;i++){
             if(i==posicao){
-                printf("\nNa %d posição está o número %d ", posicao,aux->valor);
+                printf("\nNa %d posição está o número %d\n", posicao,aux->valor);
                 return;
 		achou = 1;
             }
@@ -52,16 +52,17 @@ void recuperaLista(int posicao){
         }
 	if(achou == 0) printf("\nPosição inválida\n");
         printf("\n");
+	return;
 }
 
 void removeValor(int valor){
-	int achou = 0;
 	if(lista==NULL){
             printf("\nLista vazia!\n");
             return;
         }
-	struct no *aux, *anterior, *atual;
-	for(atual=lista;atual!=NULL;atual->prox){
+	int achou = 0;
+	struct no *aux=NULL, *anterior=NULL, *atual;
+	for(atual=lista;atual!=NULL&&atual->valor<valor;atual->prox){
 		anterior = atual;
 		atual = atual->prox;
 		if(atual->valor == valor){
@@ -72,15 +73,14 @@ void removeValor(int valor){
 			achou = 1;
 		}
 	}
-	if(achou = 0){
+	if(achou == 0){
 		printf("\nElemento não encontrado!\n");
 	}
-
+	return;
 }
 
- void removelista(int posicao){
-        struct no *atual=lista
-        struct no *anterior=NULL;
+ void removeLista(int posicao){
+        struct no *atual=lista, *anterior=NULL;
         if(lista==NULL){
             printf("\nLista vazia!\n");
             return;
@@ -97,7 +97,7 @@ void removeValor(int valor){
         }
         
         printf("\nElemento removido!\n");
-        return aux;
+        return;
     }
 
 void imprime(){
@@ -115,7 +115,17 @@ void imprime(){
 int main(){
 	insereLista(3);
 	insereLista(4);
+	insereLista(2);
+	insereLista(5);
 	imprime();
 	recuperaLista(1);
+	removeValor(3);
+	imprime();
+	removeValor(4);
+	imprime();
+	insereLista(3);
+	imprime();
+	insereLista(4);
+	imprime();
 	return 0;
 }
