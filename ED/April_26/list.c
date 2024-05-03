@@ -17,7 +17,8 @@ void insereLista(int valor){
 	struct no *aux;
 	aux = (struct no*)malloc(sizeof(struct no));
 	aux->valor = valor;
-	struct no *atual = lista, *anterior = NULL;
+	struct no *atual, *anterior;
+	atual = lista; anterior = NULL;
 	while(atual!=NULL && atual->valor < valor){
 		anterior = atual;
 		atual = atual->prox;
@@ -34,71 +35,85 @@ void insereLista(int valor){
 
 }
 
-void recuperaLista(int posicao){
+void recuperaLista(int valor){
         int achou = 0;
-	if(lista==NULL){
-            printf("\nLista vazia!\n");
-            return;
-        }
-        struct no *aux;
-        aux=lista;
-        for(int i=1;i<=posicao;i++){
-            if(i==posicao){
-                printf("\nNa %d posição está o número %d\n", posicao,aux->valor);
-                return;
-		achou = 1;
-            }
-            aux=aux->prox;
-        }
-	if(achou == 0) printf("\nPosição inválida\n");
-        printf("\n");
-	return;
-}
-
-void removeValor(int valor){
-	if(lista==NULL){
-            printf("\nLista vazia!\n");
-            return;
-        }
-	int achou = 0;
-	struct no *aux=NULL, *anterior=NULL, *atual;
-	for(atual=lista;atual!=NULL&&atual->valor<valor;atual->prox){
-		anterior = atual;
-		atual = atual->prox;
-		if(atual->valor == valor){
-			aux=atual;
-			anterior->prox = aux->prox;
-			free(aux);
-			printf("\nElemento removido!\n");
-			achou = 1;
-		}
-	}
-	if(achou == 0){
-		printf("\nElemento não encontrado!\n");
-	}
-	return;
-}
-
- void removeLista(int posicao){
-        struct no *atual=lista, *anterior=NULL;
         if(lista==NULL){
             printf("\nLista vazia!\n");
             return;
         }
-        if(posicao<0){
-            printf("Posição inválida**");
-        }
-        for(int i=1;i<posicao;i++){
-            if(atual->prox==NULL){
-                printf("Posição inválida!");
+        struct no *aux;
+        int i=0;
+        for(aux=lista;aux!=NULL&&aux->valor<=valor;aux=aux->prox){
+            if(aux->valor==valor){
+                printf("\nNa %d posição está o número %d\n", i,aux->valor);
+                achou=1;
             }
-            atual=atual->prox;
-            anterior=atual;
+            i++;
         }
-        
-        printf("\nElemento removido!\n");
+        if(achou == 0) printf("\nNão existe esse valor\n");
+	return;
+}
+
+void removeValor(int valor) {
+    if (lista == NULL) {
+        printf("\nLista vazia! Nenhum elemento para remover.\n");
         return;
     }
+
+    struct no *anterior = NULL;
+    struct no *atual = lista;
+
+    while (atual != NULL && atual->valor <= valor) {
+        if (atual->valor == valor) {
+            if (atual == lista) {
+                lista = lista->prox;
+            } else {
+                anterior->prox = atual->prox;
+            }
+            free(atual);
+            printf("\nElemento removido!\n");
+            return;
+        }
+        anterior = atual;
+        atual = atual->prox;
+    }
+
+    printf("\nElemento não encontrado!\n");
+}
+
+void removeLista(int posicao) {
+    if (lista == NULL) {
+        printf("\nLista vazia! Nenhum elemento para remover.\n");
+        return;
+    }
+
+    if (posicao <= 0) {
+        printf("\nPosição inválida. Insira um valor positivo maior que zero.\n");
+        return;
+    }
+
+    struct no *anterior = NULL;
+    struct no *atual = lista;
+    int i = 1;
+
+    while (atual != NULL) {
+        if (i == posicao) {
+            if (atual == lista) {
+                lista = lista->prox;
+            } else {
+                anterior->prox = atual->prox;
+            }
+            free(atual);
+            printf("\nElemento na posição %d removido!\n", posicao);
+            return;
+        }
+        anterior = atual;
+        atual = atual->prox;
+        i++;
+    }
+
+    printf("Posição não encontrada!\n");
+}
 
 void imprime(){
 	if(lista==NULL){
@@ -106,26 +121,26 @@ void imprime(){
 	}
 	struct no *aux;
 	printf("\nLista: ");
-	for(aux=lista;aux!=NULL;aux=aux->prox){
+	for(aux=lista;aux!=NULL;){
 		printf("%d ", aux->valor);
+		aux=aux->prox;
 	}
 	printf("\n");
+	fflush(stdin);
 }
 
 int main(){
-	insereLista(3);
+	printf("Ponteiro: %p", lista);
+    	insereLista(3);
 	insereLista(4);
+	recuperaLista(3);
 	insereLista(2);
 	insereLista(5);
 	imprime();
-	recuperaLista(1);
 	removeValor(3);
 	imprime();
-	removeValor(4);
-	imprime();
-	insereLista(3);
-	imprime();
-	insereLista(4);
+	removeLista(1);
 	imprime();
 	return 0;
 }
+
