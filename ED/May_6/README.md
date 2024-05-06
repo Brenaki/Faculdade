@@ -71,34 +71,39 @@ struct no{
 struct no *raiz = NULL;
 
 void inserir(int valor){
-	struct no *aux, *aux2;
-	aux = (struct no*)malloc(sizeof(struct no));
-	aux->valor = valor;
-	aux->esq = NULL;
-	aux->dir = NULL;
-	if(raiz==NULL){
-		raiz = aux;
-		return;
-	}
-	else {
-		while(1){
-			if(aux->valor<aux2->valor){
-				if(aux2->esq==NULL){
-					aux2->esq = aux;
-					return;
-				}
-				else {
-					aux2 = aux2->esq;
-				}
-			}
-			else {
-				if(aux2->dir==NULL){
-					aux2->dir = aux;
-					return;
-				}
-				else 	{
-					aux2 = aux2->dir;
-				}
+  struct no *aux;
+ aux = (struct no*)malloc(sizeof(struct no));
+ 
+ aux->valor = valor;
+ aux->esq = NULL;
+ aux->dir = NULL;
+
+
+ if(raiz==NULL){
+  raiz = aux;
+  return;
+ }
+
+ else {
+  struct no *atual = raiz;
+  struct no *prt = NULL;
+  while(1){
+   prt = atual;
+   if(valor < prt->valor){
+    atual = atual->esq;
+
+    if(atual == NULL){
+     prt->esq = aux;
+     return;
+    }
+   }
+   else {
+    atual = atual->dir;
+
+    if(atual == NULL){
+     prt->dir = aux;
+     return;
+    }
 			}
 		}
 	}
