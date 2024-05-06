@@ -20,3 +20,4 @@
 - [Exercícios - Fila Dinâmica](./April_19/)
 - [Lista Encadeadas Ordenadas](./April_26/)
 - [Árvores e Árvores binárias](./April_29/)
+- [Árvore binárias II](./May_6/)
