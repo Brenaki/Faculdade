@@ -110,3 +110,11 @@ int main(){
 	return 0;
 }
 ```
+
+### Implementação
+
+![Diagrama de como vai ficar a árvore](./EDExtra.png)
+
+- [Código utilizado para resolver essa árvore](./exemplo2.c)
+
+> Obs: O código assim está incompleto provavelmente devido ao Autor realizar a implementação real na aula prática então busque pela pasta **"May_10"**, que nela estará o código resolvido.

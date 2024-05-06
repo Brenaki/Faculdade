@@ -10,55 +10,74 @@ struct no{
 struct no *raiz = NULL;
 
 void inserir(int valor){
-	struct no *aux, *aux2;
+	struct no *aux;
 	aux = (struct no*)malloc(sizeof(struct no));
+	
 	aux->valor = valor;
 	aux->esq = NULL;
 	aux->dir = NULL;
+
+
 	if(raiz==NULL){
 		raiz = aux;
 		return;
 	}
+
 	else {
+		struct no *atual = raiz;
+		struct no *prt = NULL;
 		while(1){
-			if(aux->valor<aux2->valor){
-				if(aux2->esq==NULL){
-					aux2->esq = aux;
+			prt = atual;
+			if(valor < prt->valor){
+				atual = atual->esq;
+
+				if(atual == NULL){
+					prt->esq = aux;
 					return;
-				}
-				else {
-					aux2 = aux2->esq;
 				}
 			}
 			else {
-				if(aux2->dir==NULL){
-					aux2->dir = aux;
+				atual = atual->dir;
+
+				if(atual == NULL){
+					prt->dir = aux;
 					return;
-				}
-				else 	{
-					aux2 = aux2->dir;
 				}
 			}
 		}
 	}
 }
 
-void printInorder() {
-    if (raiz == NULL) return;
-
-    // primeiro recurso no lado esquerdo
-    printInorder(raiz->esq);
-
-    // então imprima os dados do nó
-    printf("%d ", raiz->valor);  
-
-    // agora recurso no lado direito
-    printInorder(raiz->dir);
+void printInorder(struct no *aux) {
+    if(aux){
+			printInorder(aux->esq);
+			printf("%d ", aux->valor);
+			printInorder(aux->dir);
+  }
 }
+
+// void printPreorder(struct no *aux) {
+//     if(aux){
+// 			printf("%d ", aux->valor);
+// 			printInorder(aux->esq);
+// 			printInorder(aux->dir);
+//   }
+// }
 
 int main(){
 	inserir(10);
 	inserir(4);
-	printInorder();
+	inserir(12);
+	inserir(3);
+	inserir(8);
+	inserir(7);
+	inserir(2);
+	inserir(1);
+	inserir(20);
+	inserir(13);
+	printf("Inorder: ");
+	printInorder(raiz);
+	// printf("\nPreorder: ");
+	// printPreorder(raiz);
 	return 0;
 }
