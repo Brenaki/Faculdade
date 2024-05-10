@@ -7,3 +7,7 @@
  	- `void buscaB(int valor)`: busca um valor em uma árvore de busca binária. Esta função imprime apenas se encontrou ou não o valor
  	- `void printInorder(struct no *raiz)`: imprime o conteúdo da árvore binária em ordem.
 2. Desenvolva uma função principal na qual todas essas funções sejam testadas.
+
+## Resolução
+
+-[Resolução do exercício proposto](./arvore.c)
