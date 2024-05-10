@@ -6,3 +6,4 @@
 - [Tautologia](./April_5/)
 - [Inferência por prova direta](./April_12/)
 - [Correção de Exercícios | Revisão para prova](./April_26/)
+- [Lógica de Primeira Ordem](./May_10/)
