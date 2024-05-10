@@ -10,4 +10,4 @@
 
 ## Resolução
 
--[Resolução do exercício proposto](./arvore.c)
+- [Resolução do exercício proposto](./arvore.c)
