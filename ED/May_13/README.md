@@ -14,25 +14,28 @@
 #### Exemplo em Linguagem C
 
 ```c
-void bubbleSort(int v[])
-	for(int i=0;i<5;i++){
-		for(int j=0; j<4; j++){
-			if(v[j]>v[j+1]){
-				int aux = v[j];
-				v[j] = v[j+1];
-				v[j+1] = aux;
-			}
-		}
-	}
+void bubbleSort(int vetor[]) {
+  for (int i = 1; i <= size + 1; i++) {
+    for (int j = 0; j <= size; j++) {
+      if (vetor[j] > vetor[j + 1]) {
+        int aux = vetor[j];
+        vetor[j] = vetor[j + 1];
+        vetor[j + 1] = aux;
+      }
+    }
+  }
+}
 ```
 
 ```go
 func bubbleSort(v[] int){
-	for i:=0;i<5;i++{
-		for j:=0;j<4;j++{
-			aux := v[j]
-			v[j] = v[j+1]
-			v[j+1] = aux
+	for i:=0;i<size;i++{
+		for j:=0;j<size;j++{
+			if v[j]>v[j+1]{
+				aux := v[j]
+				v[j] = v[j+1]
+				v[j+1] = aux
+			}	
 		}
 	}
 }
@@ -41,16 +44,17 @@ func bubbleSort(v[] int){
 ##### Exemplo em C com o bubble sort de trás para frente
 
 ```c
-void bubbleSort(int v[])
-	for(int i=0;i<=5;i++){
-		for(int j=4; i>=j; j--){
-			if(v[j]<v[j-1]){
-				int aux = v[j];
-				v[j] = v[j+1];
-				v[j+1] = aux;
-			}
-		}
-	}
+void bubbleSort() {
+  for (int j = 1; j <= N - 1; j++) {
+    for (int i = N - 1; i >= j; i--) {
+      if (A[i] < A[i - 1]) {
+        int aux = A[i];
+        A[i] = A[i - 1];
+        A[i - 1] = aux;
+      }
+    }
+  }
+}
 ```
 
 ### Melhorando ainda mais o bubble sort
@@ -58,7 +62,7 @@ void bubbleSort(int v[])
 ```c
 int n=1, troca = 1;
 
-while(n<=5 && troca=1){
+while(n<=5 && troca==1){
 	troca =0;
 	for(int i=0; i<3;i++){
 		if(v[i]<v[i+1]){
@@ -67,7 +71,7 @@ while(n<=5 && troca=1){
 			v[i+1] = aux;
 		}
 	}
-	n=n+1
+	n=n+1;
 }
 ```
 
@@ -77,7 +81,7 @@ while(n<=5 && troca=1){
 - O pivô é comparado com todos elementos antes dele e são colocados em ordem;
 - Depois, o pivô é trocado.
 
-```
+```c
 void inserctionSort(int v[]){
 	for(int i=1;i<4;i++){
 		pivo = v[i];

@@ -24,3 +24,4 @@
 - [Árvore binárias II](./May_6/)
 - [Exercícios - Árvore binária](./May_10/)
 - [Algoritmos de Ordenação](./May_13/)
+- [Exercícios - Algoritmos de Ordenação](./May_17/)
