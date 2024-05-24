@@ -1,10 +1,34 @@
 .data
 	ln: .asciiz "\n"
-	equals: .asciiz " = "
+	equals: .asciiz "="
+	msg: .asciiz "Fibonacci"
+	msg1: .asciiz "Gold Number"
+	tb: .asciiz "\t"
 
 .text
 main:	li $t2, 0
 	li $t3, 1
+	
+	# Titles
+		# Fibonacci
+		la $a0, msg
+		li $v0, 4
+		syscall
+
+		# \t
+		la $a0, tb
+		li $v0, 4
+		syscall
+		
+		# Gold Number
+		la $a0, msg1
+		li $v0, 4
+		syscall
+		
+		# /n
+		la $a0, ln
+		li $v0, 4
+		syscall
 	
 	add $t0, $zero, $zero
 	
@@ -30,8 +54,18 @@ main:	li $t2, 0
 		li $v0, 1
 		syscall
 		
+		# \t
+		la $a0, tb
+		li $v0, 4
+		syscall
+		
 		# equals
 		la $a0, equals
+		li $v0, 4
+		syscall
+		
+		# \t
+		la $a0, tb
 		li $v0, 4
 		syscall
 		
