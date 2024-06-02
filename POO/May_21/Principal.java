@@ -3,7 +3,8 @@ public class Principal {
     try {
       Carro c = new Carro();
       c.setPotencia(1);
-      c.setModelo("");
+      c.setModelo("V8");
+      System.out.println(c);
     } catch (MinhaExcecao e) {
       System.out.println("Erro: "+ e.getMessage());
     }

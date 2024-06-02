@@ -13,6 +13,6 @@ public class Carro {
  	}
 
  	public String toString(){
- 		return "Modelo: "+modelo+"Potência: "+potencia;
+ 		return "Modelo: "+modelo+"\nPotência: "+potencia;
 	}
 }
