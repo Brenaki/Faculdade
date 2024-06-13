@@ -9,16 +9,24 @@ public class Principal {
         
     LivroDeBiblioteca livro1 = (LivroDeBiblioteca) vet[0];
     LivroDeLivraria livro2 = (LivroDeLivraria) vet[1];
+    
+    Biblioteca(livro1);
+    Livraria(livro2);
 
+    // Mostrando os livros
+    JOptionPane.showMessageDialog(null, livro1);
+    JOptionPane.showMessageDialog(null, livro2);
+  }
+
+  public static void Biblioteca(LivroDeBiblioteca livro) {
     do {
       try {
-        Biblioteca(livro1);
-        Livraria(livro2);
-  
-        // Mostrando os livros
-        JOptionPane.showMessageDialog(null, livro1);
-        JOptionPane.showMessageDialog(null, livro2);
-  
+        // Biblioteca
+        livro.informar();
+        JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
+        livro.empresta();
+        livro.avaliar();
+        livro.devolve();
         return;
       } catch(MinhaExcecao e) {
         JOptionPane.showMessageDialog(null, e.getMessage());
@@ -27,24 +35,26 @@ public class Principal {
       } catch(NumberFormatException e) {
         JOptionPane.showMessageDialog(null, "Erro de formato!");
       }
-    } while (true);
+    } while(true);
   }
 
-  public static void Biblioteca(LivroDeBiblioteca livro) throws MinhaExcecao{
-    // Biblioteca
-    livro.informar();
-    JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
-    livro.empresta();
-    livro.avaliar();
-    livro.devolve();
-  }
-
-  public static void Livraria(LivroDeLivraria livro) throws MinhaExcecao{
-    // Livraria
-    livro.informar();
-    JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
-    livro.setPreco(92.9);
-    JOptionPane.showMessageDialog(null, "Preço: " + livro.getPreco(), "Valor do livro", JOptionPane.INFORMATION_MESSAGE);
-    livro.avaliar();
+  public static void Livraria(LivroDeLivraria livro) {
+    do{
+      try{ 
+       // Livraria
+        livro.informar();
+        JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
+        livro.setPreco(92.9);
+        JOptionPane.showMessageDialog(null, "Preço: " + livro.getPreco(), "Valor do livro", JOptionPane.INFORMATION_MESSAGE);
+        livro.avaliar();
+        return;
+      } catch(MinhaExcecao e) {
+        JOptionPane.showMessageDialog(null, e.getMessage());
+      } catch(ClassCastException e) {
+        JOptionPane.showMessageDialog(null, "Erro de cast!");
+      } catch(NumberFormatException e) {
+        JOptionPane.showMessageDialog(null, "Erro de formato!");
+      }
+    } while(true);
   }
 }
