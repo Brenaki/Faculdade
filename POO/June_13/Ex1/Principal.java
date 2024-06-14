@@ -9,7 +9,11 @@ public class Principal {
         
     LivroDeBiblioteca livro1 = (LivroDeBiblioteca) vet[0];
     LivroDeLivraria livro2 = (LivroDeLivraria) vet[1];
-    
+    try {
+      livro1.devolve();
+    } catch (MinhaExcecao e) {
+      JOptionPane.showMessageDialog(null, e.getMessage());
+    }
     Biblioteca(livro1);
     Livraria(livro2);
 
@@ -19,42 +23,39 @@ public class Principal {
   }
 
   public static void Biblioteca(LivroDeBiblioteca livro) {
-    do {
-      try {
-        // Biblioteca
-        livro.informar();
-        JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
-        livro.empresta();
-        livro.avaliar();
-        livro.devolve();
-        return;
-      } catch(MinhaExcecao e) {
-        JOptionPane.showMessageDialog(null, e.getMessage());
-      } catch(ClassCastException e) {
-        JOptionPane.showMessageDialog(null, "Erro de cast!");
-      } catch(NumberFormatException e) {
-        JOptionPane.showMessageDialog(null, "Erro de formato!");
-      }
-    } while(true);
+    try {
+      // Biblioteca
+      livro.informar();
+      JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
+      livro.empresta();
+      livro.avaliar();
+      livro.devolve();
+      return;
+    } catch (MinhaExcecao e) {
+      JOptionPane.showMessageDialog(null, e.getMessage());
+    } catch (ClassCastException e) {
+      JOptionPane.showMessageDialog(null, "Erro de cast!");
+    } catch (NumberFormatException e) {
+      JOptionPane.showMessageDialog(null, "Erro de formato!");
+    }
   }
 
   public static void Livraria(LivroDeLivraria livro) {
-    do{
-      try{ 
-       // Livraria
-        livro.informar();
-        JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
-        livro.setPreco(92.9);
-        JOptionPane.showMessageDialog(null, "Preço: " + livro.getPreco(), "Valor do livro", JOptionPane.INFORMATION_MESSAGE);
-        livro.avaliar();
-        return;
-      } catch(MinhaExcecao e) {
-        JOptionPane.showMessageDialog(null, e.getMessage());
-      } catch(ClassCastException e) {
-        JOptionPane.showMessageDialog(null, "Erro de cast!");
-      } catch(NumberFormatException e) {
-        JOptionPane.showMessageDialog(null, "Erro de formato!");
-      }
-    } while(true);
+    try {
+      // Livraria
+      livro.informar();
+      JOptionPane.showMessageDialog(null, livro, "Livro", JOptionPane.INFORMATION_MESSAGE);
+      livro.setPreco(92.9);
+      JOptionPane.showMessageDialog(null, "Preço: " + livro.getPreco(), "Valor do livro",
+          JOptionPane.INFORMATION_MESSAGE);
+      livro.avaliar();
+      return;
+    } catch (MinhaExcecao e) {
+      JOptionPane.showMessageDialog(null, e.getMessage());
+    } catch (ClassCastException e) {
+      JOptionPane.showMessageDialog(null, "Erro de cast!");
+    } catch (NumberFormatException e) {
+      JOptionPane.showMessageDialog(null, "Erro de formato!");
+    }
   }
 }

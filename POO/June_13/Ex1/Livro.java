@@ -54,7 +54,8 @@ public abstract class Livro {
   }
 
   public void setAvaliacao(int avaliacao) throws MinhaExcecao {
-    if(avaliacao < 0 || avaliacao > 10) throw new MinhaExcecao("Avaliação inválida!");
+    if (avaliacao < 0 || avaliacao > 10)
+      throw new MinhaExcecao("Avaliação inválida! A nota deve ser entre 0 e 10.");
     else this.avaliacao = avaliacao;
   }
 
