@@ -80,15 +80,6 @@ void strandSort(int vet[], int n) {
     }
 }
 
-void imprimirVetor() {
-  int i;
-  printf("Sorted array: ");
-  for (i = 0; i < N; i++) {
-    printf("%d ", A[i]);
-  }
-  printf("\n");
-}
-
 int main() {
   clock_t time1, time2;
 
@@ -99,8 +90,6 @@ int main() {
   strandSort(A, tamanho);
   time2 = (clock() - time1);
   verficaVetor(time2);
-  
-  imprimirVetor();
 
   time1 = clock();
   strandSort(A, tamanho);
