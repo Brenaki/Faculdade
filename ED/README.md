@@ -27,3 +27,7 @@
 - [Exercícios - Algoritmos de Ordenação](./May_17/)
 - [Algoritmos de Ordenação II](./May_20/)
 - [Exercícios - Algoritmos de Ordenação II](./May_24/)
+
+## 2ºSemestre
+
+- [Estrutura de Dados II | Algoritmos de Busca - Sequencial](./July_16/)
