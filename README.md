@@ -5,6 +5,7 @@
 ## Máterias
 
 - [Algoritmos e Programação](./AP_1ano)
+- [Analise de Algoritmos](./Analise_Algoritmos/)
 - [Cálculo Diferencial Integral](./CDI)
 - [Cálculo Numérico](./CN/)
 - [Estrutura de Dados](./ED)
