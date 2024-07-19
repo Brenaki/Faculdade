@@ -1,0 +1,192 @@
+# Loading project maioria
+# Compile of maioria.vhd was successful.
+# Compile of maioria.vhd was successful.
+# Compile of maioria.vhd was successful.
+# Compile of maioria_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.maioria_tb
+# vsim work.maioria_tb 
+# Start time: 16:02:09 on Jul 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.maioria_tb(arch)
+# Loading work.maioria(arch)
+add wave -position insertpoint  \
+sim:/maioria_tb/A \
+sim:/maioria_tb/B \
+sim:/maioria_tb/C \
+sim:/maioria_tb/Y
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -all
+# Break key hit
+# Simulation stop requested.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of maioria.vhd was successful.
+# Compile of maioria_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of maioria.vhd was successful.
+# Compile of maioria_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.maioria_tb
+# End time: 16:23:02 on Jul 19,2024, Elapsed time: 0:20:53
+# Errors: 0, Warnings: 10
+# vsim work.maioria_tb 
+# Start time: 16:23:02 on Jul 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.maioria_tb(arch)
+# Loading work.maioria(arch)
+add wave -position insertpoint  \
+sim:/maioria_tb/A \
+sim:/maioria_tb/B \
+sim:/maioria_tb/C \
+sim:/maioria_tb/Y
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of maioria.vhd was successful.
+# Compile of maioria_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of maioria.vhd was successful.
+# Compile of maioria_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.maioria_tb
+# End time: 16:25:15 on Jul 19,2024, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 3
+# vsim work.maioria_tb 
+# Start time: 16:25:15 on Jul 19,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.maioria_tb(arch)
+# Loading work.maioria(arch)
+add wave -position insertpoint  \
+sim:/maioria_tb/A \
+sim:/maioria_tb/B \
+sim:/maioria_tb/C \
+sim:/maioria_tb/Y
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 16:31:42 on Jul 19,2024, Elapsed time: 0:06:27
+# Errors: 0, Warnings: 1

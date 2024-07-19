@@ -31,3 +31,4 @@
 ## 2ºSemestre
 
 - [Estrutura de Dados II | Algoritmos de Busca - Sequencial](./July_16/)
+- [Exercício Busca Sequencial](./July_19/)

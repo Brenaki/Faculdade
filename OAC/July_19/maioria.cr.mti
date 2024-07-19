@@ -1,0 +1,18 @@
+/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity maioria_tb
+-- Compiling architecture arch of maioria_tb
+-- Loading entity maioria
+
+} {} {}} /home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity maioria
+-- Compiling architecture arch of maioria
+
+} {} {}}

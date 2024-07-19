@@ -1,0 +1,94 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/victor/Documentos/GitHub/Faculdade/OAC/July_19
+Emaioria
+Z1 w1721414825
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 10
+R0
+Z4 8/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria.vhd
+Z5 F/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria.vhd
+l0
+L4 1
+Vljc0XzX12ZeN2gaSHoI0c1
+!s100 :<TIQ@d@Enh@RF5TJ8JLT1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1721417100
+!i10b 1
+Z8 !s108 1721417100.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria.vhd|
+Z10 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+Z13 DEx4 work 7 maioria 0 22 ljc0XzX12ZeN2gaSHoI0c1
+!i122 10
+l10
+L9 4
+V:QS[QK@926NmIK<NE_FLj1
+!s100 <0JeNcD9W=1?kVgf>7@Be3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emaioria_tb
+Z14 w1721417079
+R2
+R3
+!i122 11
+R0
+Z15 8/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria_tb.vhd
+Z16 F/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria_tb.vhd
+l0
+L4 1
+VE^ddDKe5;IVf2mETK`[IF3
+!s100 712O4]L8O^>]LXhRP^@nI3
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria_tb.vhd|
+Z18 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/July_19/maioria_tb.vhd|
+!i113 1
+R11
+R12
+Aarch
+R13
+R2
+R3
+Z19 DEx4 work 10 maioria_tb 0 22 E^ddDKe5;IVf2mETK`[IF3
+!i122 11
+l10
+Z20 L7 27
+Z21 V3XJHFRSmF91ZFV;BVbK9G3
+Z22 !s100 nhfk<`=P`88F8155VD;M_1
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
