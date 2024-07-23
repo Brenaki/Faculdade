@@ -35,3 +35,4 @@
 ```
 
 - [VHDL](./July_18/)
+- [Aula Prática - VHDL | Votador](./July_19/)

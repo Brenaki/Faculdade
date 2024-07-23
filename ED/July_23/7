@@ -1,0 +1,8 @@
+# Algoritmos de busca II
+
+### Estatística 
+
+- Estatiscamente e por probabilidade existe uma chance maior de uma chave buscada ser buscada novamente.
+- A chance disso aconntecer é maior quando o escopo de busca é pequeno.
+- Logo fica evidente que, em uma busca sequencial, os elementos mais buscados fiquem próximo ao ínicio da lista torna o número de comparações menores.
+

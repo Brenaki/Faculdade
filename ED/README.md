@@ -32,3 +32,4 @@
 
 - [Estrutura de Dados II | Algoritmos de Busca - Sequencial](./July_16/)
 - [Exercício Busca Sequencial](./July_19/)
+- [Mover para frente e transposição | Busca binária](./July_23/)
