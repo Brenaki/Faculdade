@@ -36,3 +36,4 @@
 
 - [VHDL](./July_18/)
 - [Aula Prática - VHDL | Votador](./July_19/)
+- [VHDL - Aula 02](./July_25/)
