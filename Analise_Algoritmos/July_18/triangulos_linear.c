@@ -11,10 +11,10 @@ int main() {
   int num_triangulos = 0; // numero de triangulos equilateros
   int pontos[MAXN + 3];
 
-  scanf("%d ", &N);
+  scanf(" %d", &N);
   pontos[0] = 0;
   for (i = 0; i < N - 1; ++i) {
-    scanf("%d ", &x);
+    scanf(" %d", &x);
     pontos[i + 1] = pontos[i] + x;
   }
   scanf(" %d", &x);

@@ -16,13 +16,13 @@ int main()
   int pontos[MAXN];
 
   // leitura da entrada
-  scanf("%d ", &N);
+  scanf(" %d", &N);
   pontos[0] = 0;
   for (i=0; i<N-1; ++i) {
-    scanf("%d ", &x);
+    scanf(" %d", &x);
     pontos[i+1] = pontos[i] + x;
   }
-  scanf("%d ", &x);
+  scanf(" %d", &x);
   circ = pontos[N-1] + x; // comprimento da circunferencia
   if (circ%3)  {          // circunferencia nao eh multiplo de 3
     printf("0\n");
