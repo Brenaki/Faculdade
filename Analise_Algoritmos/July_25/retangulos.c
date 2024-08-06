@@ -1,38 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-// 1 <= N <= 500 000 -> Tamanho do vetor
-// 0 <= K <= 10^6 -> Soma dos números
-// 0 <= Xi <= 100 -> Números dentro do vetor
+int V[500000];
 
-void retangulo(int *arr, int n, int k) {
-  int i, j, soma, solucao = 0;
-  for (i = 0; i < n - 1; i++) {
-    soma = 0;
-    for (j = i; j < n - 1; j++) {
-      soma += arr[j];
-      if (soma > k) {
-        break;
-      }
-      if (soma == k)
-        solucao++;
+int main()
+{
+    int N, K;
+    long long  saida = 0LL;
+    long soma;
+
+    scanf("%d %d ", &N, &K);
+    for (int i = 0 ; i < N ; i++)
+        scanf("%d ", &V[i]);
+    
+    for (int i = 0 ; i < N ; i++){
+        soma = 0L;
+        for (int j = i ; j < N ; j++){
+            soma += V[j];
+            if (soma == K)
+                saida++;
+        }
     }
-  }
-
-  printf("%d", solucao);
-}
-
-int main() {
-  int k, n;
-  scanf("%d", &n);
-  scanf("%d", &k);
-
-  int arr[n];
-
-  for (int i; i < n; i++) {
-    scanf("%d", &arr[i]);
-  }
-
-  retangulo(arr, n, k);
-
-  return 0;
+    printf("%lld\n", saida);
+    return 0;
 }
