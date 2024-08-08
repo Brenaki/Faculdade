@@ -34,3 +34,4 @@
 - [Exercício Busca Sequencial](./July_19/)
 - [Mover para frente e transposição | Busca binária](./July_23/)
 - [Filas de prioridade - Heap](./July_30/)
+- [Tabela Hashing](./August_6/)
