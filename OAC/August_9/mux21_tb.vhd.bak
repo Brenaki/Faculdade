@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux21_tb is
+end entity mux21_tb;
+
+architecture muxArch of mux21_tb is
+  signal A,B,S: STD_LOGIC;
+  signal Y: STD_LOGIC;
+begin
+  UTT: entity work.mux21 port map(A, B, S, Y);
+    linha_A: process begin
+      A <= '0';
+      wait for 100 ps;
+      A <= '1';
+      wait for 100 ps;
+    end process;
+    linha_B: process begin
+      B <= '1';
+      wait for 100 ps;
+      B <= '0';
+      wait for 100 ps;
+    end process;
+    linha_S: process begin
+      S <= '1';
+      wait for 50 ps;
+      S <= '0';
+      wait for 50 ps;
+      S <= '1';
+      wait for 50 ps;
+      S <= '0';
+      wait for 50 ps;
+    end process;
+end architecture muxArch;

@@ -1,0 +1,307 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/victor/Documentos/GitHub/Faculdade/OAC/July_19
+Emux21
+Z0 w1723228691
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 19
+Z3 d/home/victor/Documentos/GitHub/Faculdade/OAC/August_9
+Z4 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21.vhd
+Z5 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21.vhd
+l0
+L4 1
+V@ac`dWa]BiPA407lbldca2
+!s100 [3D<z:IN4g0SL5eH0W2Xl2
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1723232859
+!i10b 1
+Z8 !s108 1723232859.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21.vhd|
+Z10 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Amux
+R1
+R2
+Z13 DEx4 work 5 mux21 0 22 @ac`dWa]BiPA407lbldca2
+!i122 19
+l12
+L11 4
+VG@U=K5k2E`_E?T048j4fH0
+!s100 h7^>OzVol=`X3ie1=0^D`2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emux2132
+Z14 w1723230725
+R1
+R2
+!i122 21
+R3
+Z15 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132.vhd
+Z16 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132.vhd
+l0
+L4 1
+V5cfY4DDl3de[K4?zzj0bD2
+!s100 LiIomMCUzlgz20YjnK>cj3
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132.vhd|
+Z18 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132.vhd|
+!i113 1
+R11
+R12
+Amux32
+R1
+R2
+Z19 DEx4 work 7 mux2132 0 22 5cfY4DDl3de[K4?zzj0bD2
+!i122 21
+l13
+L12 4
+V<E5fBmHV0<gI;n]YYOnZU0
+!s100 DkT5418>GHhSiB]Z8Ne901
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Emux2132_tb
+Z20 w1723231207
+R1
+R2
+!i122 22
+R3
+Z21 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132_tb.vhd
+Z22 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132_tb.vhd
+l0
+L4 1
+VJJJD7=oE62GEaoK[o7H[j0
+!s100 GaFNOV^7B9@cC?Lnz^DLU2
+R6
+32
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132_tb.vhd|
+Z24 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux2132_tb.vhd|
+!i113 1
+R11
+R12
+Aarch
+R19
+R1
+R2
+DEx4 work 10 mux2132_tb 0 22 JJJD7=oE62GEaoK[o7H[j0
+!i122 22
+l10
+Z25 L7 28
+VcfE4WDnHk@V;z8;BDb]1h0
+!s100 8iS7E]0j^iF?W0@2ajVPc3
+R6
+32
+R7
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Emux21_tb
+Z26 w1723229797
+R1
+R2
+!i122 20
+R3
+Z27 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21_tb.vhd
+Z28 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21_tb.vhd
+l0
+L4 1
+V;O3H>J3Ebg4`Z[DBNd9@23
+!s100 4PW7BZhUYX2jaAC:X];`g3
+R6
+32
+R7
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21_tb.vhd|
+Z30 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux21_tb.vhd|
+!i113 1
+R11
+R12
+Amuxarch
+R13
+R1
+R2
+Z31 DEx4 work 8 mux21_tb 0 22 ;O3H>J3Ebg4`Z[DBNd9@23
+!i122 20
+l10
+R25
+VhZ6fWjKg@;A@BoXgG^UN_2
+!s100 ^NzaAj`hoLPh>YB4J]5oG1
+R6
+32
+R7
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R11
+R12
+Amuxg
+w1723232741
+Z32 DEx4 work 5 mux41 0 22 majdN9_H_nT;LdaFWUjfQ0
+R1
+R2
+R31
+!i122 18
+Z33 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41_tb.vhd
+Z34 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41_tb.vhd
+l10
+Z35 L7 50
+VjUoo8cWmkXmiJ18Rg^2gH2
+!s100 P2o:GKOOF4_mT_l^Bkd7;1
+R6
+32
+!s110 1723232756
+!i10b 1
+!s108 1723232756.000000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41_tb.vhd|
+Z37 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41_tb.vhd|
+!i113 1
+R11
+R12
+Amux41tb
+w1723232613
+R32
+R1
+R2
+R31
+!i122 12
+R33
+R34
+l10
+R35
+V74eG_Q_LM^^oMaI@c9GSd0
+!s100 4_RJ]LoJ0oK>^U<G7S^Hd0
+R6
+32
+!s110 1723232683
+!i10b 1
+!s108 1723232683.000000
+R36
+R37
+!i113 1
+R11
+R12
+Emux41
+Z38 w1723232011
+R1
+R2
+!i122 23
+R3
+Z39 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41.vhd
+Z40 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41.vhd
+l0
+L4 1
+VmajdN9_H_nT;LdaFWUjfQ0
+!s100 bhL<ojjX4]B_73@:ZKgQ[2
+R6
+32
+R7
+!i10b 1
+R8
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41.vhd|
+Z42 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_9/mux41.vhd|
+!i113 1
+R11
+R12
+Amux
+R13
+R1
+R2
+R32
+!i122 23
+l14
+L12 7
+V55lMCmdf6o2832dC=HJa21
+!s100 TjzOX[OaA:]g][9TaCzE71
+R6
+32
+R7
+!i10b 1
+R8
+R41
+R42
+!i113 1
+R11
+R12
+Emux41_tb
+Z43 w1723232854
+R1
+R2
+!i122 24
+R3
+R33
+R34
+l0
+L4 1
+Ve1lI7Ae<=H;=mE<LEXYil1
+!s100 b_3LQIH2K:YSB@Gz>6FS42
+R6
+32
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Amuxg
+R32
+R1
+R2
+DEx4 work 8 mux41_tb 0 22 e1lI7Ae<=H;=mE<LEXYil1
+!i122 24
+l10
+R35
+VfF357kO^ccFDUn52ZM05J3
+!s100 ma]c[9KPjXa<ldc^2FYV21
+R6
+32
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12

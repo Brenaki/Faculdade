@@ -1,22 +1,22 @@
 # Loading project maioria
-# Compile of maioria.vhd was successful.
-# Compile of maioria.vhd was successful.
-# Compile of maioria.vhd was successful.
-# Compile of maioria_tb.vhd was successful.
+# reading /home/victor/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project multiplexador
+# Compile of mux21.vhd was successful.
+# Compile of mux21_tb.vhd was successful.
 # 2 compiles, 0 failed with no errors.
-vsim work.maioria_tb
-# vsim work.maioria_tb 
-# Start time: 16:02:09 on Jul 19,2024
+vsim work.mux21_tb(muxarch)
+# vsim work.mux21_tb(muxarch) 
+# Start time: 15:52:52 on Aug 09,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.maioria_tb(arch)
-# Loading work.maioria(arch)
+# Loading work.mux21_tb(muxarch)
+# Loading work.mux21(mux)
 add wave -position insertpoint  \
-sim:/maioria_tb/A \
-sim:/maioria_tb/B \
-sim:/maioria_tb/C \
-sim:/maioria_tb/Y
+sim:/mux21_tb/A \
+sim:/mux21_tb/B \
+sim:/mux21_tb/S \
+sim:/mux21_tb/Y
 run
 run
 run
@@ -25,130 +25,50 @@ run
 run
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run -continue
-run -all
 # Break key hit
-# Simulation stop requested.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of maioria.vhd was successful.
-# Compile of maioria_tb.vhd was successful.
+# Compile of mux21.vhd was successful.
+# Compile of mux21_tb.vhd was successful.
 # 2 compiles, 0 failed with no errors.
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of maioria.vhd was successful.
-# Compile of maioria_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.maioria_tb
-# End time: 16:23:02 on Jul 19,2024, Elapsed time: 0:20:53
-# Errors: 0, Warnings: 10
-# vsim work.maioria_tb 
-# Start time: 16:23:02 on Jul 19,2024
+vsim work.mux21_tb(muxarch)
+# End time: 15:56:59 on Aug 09,2024, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 2
+# vsim work.mux21_tb(muxarch) 
+# Start time: 15:56:59 on Aug 09,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.maioria_tb(arch)
-# Loading work.maioria(arch)
+# Loading work.mux21_tb(muxarch)
+# Loading work.mux21(mux)
 add wave -position insertpoint  \
-sim:/maioria_tb/A \
-sim:/maioria_tb/B \
-sim:/maioria_tb/C \
-sim:/maioria_tb/Y
+sim:/mux21_tb/A \
+sim:/mux21_tb/B \
+sim:/mux21_tb/S \
+sim:/mux21_tb/Y
 run
 run
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# Compile of maioria.vhd was successful.
-# Compile of maioria_tb.vhd was successful.
+# Compile of mux2132.vhd was successful.
+# Compile of mux2132_tb.vhd was successful.
 # 2 compiles, 0 failed with no errors.
-# Compile of maioria.vhd was successful.
-# Compile of maioria_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.maioria_tb
-# End time: 16:25:15 on Jul 19,2024, Elapsed time: 0:02:13
-# Errors: 0, Warnings: 3
-# vsim work.maioria_tb 
-# Start time: 16:25:15 on Jul 19,2024
+vsim work.mux2132_tb
+# End time: 16:20:45 on Aug 09,2024, Elapsed time: 0:23:46
+# Errors: 0, Warnings: 2
+# vsim work.mux2132_tb 
+# Start time: 16:20:45 on Aug 09,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.maioria_tb(arch)
-# Loading work.maioria(arch)
+# Loading work.mux2132_tb(arch)
+# Loading work.mux2132(mux32)
 add wave -position insertpoint  \
-sim:/maioria_tb/A \
-sim:/maioria_tb/B \
-sim:/maioria_tb/C \
-sim:/maioria_tb/Y
+sim:/mux2132_tb/A \
+sim:/mux2132_tb/B \
+sim:/mux2132_tb/Y \
+sim:/mux2132_tb/S
 run
 run
 run
@@ -187,6 +107,85 @@ run
 run
 run
 run
+# Compile of mux21.vhd was successful.
+# Compile of mux21_tb.vhd was successful.
+# Compile of mux2132.vhd was successful.
+# Compile of mux2132_tb.vhd was successful.
+# Compile of mux41.vhd was successful.
+# Compile of mux41_tb.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.mux41_tb
+# End time: 16:43:23 on Aug 09,2024, Elapsed time: 0:22:38
+# Errors: 0, Warnings: 2
+# vsim work.mux41_tb 
+# Start time: 16:43:23 on Aug 09,2024
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
+# Error loading design
+# End time: 16:43:24 on Aug 09,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.mux41_tb
+# vsim work.mux41_tb 
+# Start time: 16:43:50 on Aug 09,2024
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
+# Error loading design
+# End time: 16:43:51 on Aug 09,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.mux41_tb
+# vsim work.mux41_tb 
+# Start time: 16:44:07 on Aug 09,2024
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
+# Error loading design
+# End time: 16:44:08 on Aug 09,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim work.mux41_tb
+# vsim work.mux41_tb 
+# Start time: 16:44:09 on Aug 09,2024
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
+# Error loading design
+# End time: 16:44:09 on Aug 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.mux41_tb
+# vsim work.mux41_tb 
+# Start time: 16:44:10 on Aug 09,2024
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
+# Error loading design
+# End time: 16:44:10 on Aug 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim work.mux41
+# vsim work.mux41 
+# Start time: 16:44:11 on Aug 09,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux41(mux)
+# Loading work.mux21(mux)
+add wave -position insertpoint  \
+sim:/mux41/A \
+sim:/mux41/B \
+sim:/mux41/C \
+sim:/mux41/D \
+sim:/mux41/S0 \
+sim:/mux41/S1 \
+sim:/mux41/Y \
+sim:/mux41/t0 \
+sim:/mux41/t1
 run
-# End time: 16:31:42 on Jul 19,2024, Elapsed time: 0:06:27
-# Errors: 0, Warnings: 1
+run
+run
+run
+# Compile of mux41_tb.vhd was successful.
+vsim work.mux41_tb
+# End time: 16:44:57 on Aug 09,2024, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 2
+# vsim work.mux41_tb 
+# Start time: 16:44:57 on Aug 09,2024
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
+# Error loading design
+# End time: 16:44:57 on Aug 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1

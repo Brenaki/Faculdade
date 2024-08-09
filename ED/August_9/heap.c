@@ -2,83 +2,98 @@
 #define TAM 10
 
 typedef struct {
-  int values[TAM];
+  int values[TAM + 1];
   int n;
 } Heap;
 
-void up(int n, int *values) {
-  int i = n / 2;
+void up(int *heap, int i) {
+  int j;
   int aux;
-  if (i >= 1) {
-    if (values[n] < values[i]) {
-      aux = values[n];
-      values[n] = values[i];
-      values[i] = aux;
-      up(n, values);
+
+  j = i / 2;
+  if (j >= 1) {
+    if (heap[i] > heap[j]) {
+      aux = heap[i];
+      heap[i] = heap[j];
+      heap[j] = aux;
+      up(heap, j);
     }
   }
 }
 
-void down(int n, int *values) {
-  int i = 2 * n;
+void down(int i, Heap *heap) {
+  int j;
   int aux;
 
-  if (i <= n) {
-    if (i < n) {
-      if (values[i + 1] < values[i]) {
-        i++;
+  j = 2 * i;
+  if (j <= heap->n) {
+    if (j < heap->n) {
+      if (heap->values[j + 1] < heap->values[j]) {
+        j++;
       }
     }
-    if (values[n] > values[i]) {
-      aux = values[n];
-      values[n] = values[i];
-      values[i] = aux;
-      down(n, values);
+    if (heap->values[i] > heap->values[j]) {
+      aux = heap->values[i];
+      heap->values[i] = heap->values[j];
+      heap->values[j] = aux;
     }
+    down(j, heap);
   }
 }
 
-void insertHeap(Heap vet, int value) {
-  if (vet.n == TAM) {
+void insertHeap(Heap *heap, int value) {
+  if (heap->n == TAM) {
     printf("\nHeap cheia\n");
     return;
   }
 
-  vet.n++;
-  vet.values[vet.n] = value;
-  up(vet.n, vet.values);
+  heap->n++;
+  heap->values[heap->n] = value;
+  up(heap->values, heap->n);
   printf("\nElemento inserido com sucesso!\n");
 }
 
-void removeHeap(Heap vet) {
+void removeHeap(Heap *vet) {
   int x;
   int aux;
-  if (vet.n == 0) {
+  if (vet->n == 0) {
     printf("\nHeap vaiza!\n");
     return;
   }
 
-  aux = vet.values[1];
-  vet.values[1] = vet.values[vet.n];
-  vet.values[vet.n] = aux;
-  x = vet.n;
-  vet.n--;
-  down(1, vet.values);
+  aux = vet->values[1];
+  vet->values[1] = vet->values[vet->n];
+  vet->values[vet->n] = aux;
+  x = vet->n;
+  vet->n--;
+  down(1, vet);
 
   printf("\nRemovido com sucesso!\n");
 }
 
 void maxHeap(int *values) { printf("\nMaior valor: %d\n", values[1]); }
 
+void printAll(Heap *heap) {
+  int i;
+  for (i = 1; i <= heap->n; i++) {
+    printf("%d ", heap->values[i]);
+  }
+}
+
 int main() {
   Heap vet;
+  vet.n = 0;
 
-  insertHeap(vet, 2);
-  insertHeap(vet, 3);
-  insertHeap(vet, 7);
-  insertHeap(vet, 10);
-  insertHeap(vet, 13);
-  removeHeap(vet);
+  insertHeap(&vet, 13);
+  insertHeap(&vet, 3);
+  insertHeap(&vet, 7);
+  insertHeap(&vet, 10);
+  insertHeap(&vet, 16);
+  insertHeap(&vet, 5);
+  printAll(&vet);
+  maxHeap(vet.values);
+  removeHeap(&vet);
+  printAll(&vet);
   maxHeap(vet.values);
   return 0;
 }
