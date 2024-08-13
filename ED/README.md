@@ -35,3 +35,4 @@
 - [Mover para frente e transposição | Busca binária](./July_23/)
 - [Filas de prioridade - Heap](./July_30/)
 - [Tabela Hashing](./August_6/)
+- [Tabela Hashing - Lita Encadeada](./August_13/)
