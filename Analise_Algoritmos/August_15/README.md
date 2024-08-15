@@ -241,3 +241,16 @@ n->infinito
 - cúbico: verficar todas as triplas de elementos
 - exponencial: verificar todos os subconjuntos de um conjunto
 - fatorial: verficar todas as permutações de uma sequência
+
+## Exercício
+
+f(n) | g(n) | O() | M() | T() | o() | w()
+:-- | :-: | :-: | :-: | :-: | :-: | :--
+2n³-10n² | 25n²+37n | F | V | F | F | V
+56 | log(30) | V | V | V | F | F
+log3(n) | log2(n) | V | V | V | F | F
+n³ | 3^n | F | F | F | V | F
+n! | 2^n | F | F | F | F | V(?)
+n*log(n+n²) | n² | V | V | V | F | F
+sqrt(n) | log(n) | F | F | F | F | V(?)
+log(n) | log(n²) | V | V | V | F | F
