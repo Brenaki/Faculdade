@@ -28,11 +28,11 @@ void down(int i, Heap *heap) {
   j = 2 * i;
   if (j <= heap->n) {
     if (j < heap->n) {
-      if (heap->values[j + 1] < heap->values[j]) {
+      if (heap->values[j + 1] > heap->values[j]) {
         j++;
       }
     }
-    if (heap->values[i] > heap->values[j]) {
+    if (heap->values[i] < heap->values[j]) {
       aux = heap->values[i];
       heap->values[i] = heap->values[j];
       heap->values[j] = aux;
