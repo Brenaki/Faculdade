@@ -1,0 +1,94 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/victor/Documentos/GitHub/Faculdade/OAC/August_9
+Econtrole
+Z0 w1723835505
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 5
+Z3 d/home/victor/Documentos/GitHub/Faculdade/OAC/August_16
+Z4 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle.vhd
+Z5 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle.vhd
+l0
+L4 1
+VbJSRILIJ]WOfVdE1M5eHT3
+!s100 QEKhBBIBd;6mjg9IP16CZ0
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1723836199
+!i10b 1
+Z8 !s108 1723836199.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle.vhd|
+Z10 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+Z13 DEx4 work 8 controle 0 22 bJSRILIJ]WOfVdE1M5eHT3
+!i122 5
+l22
+Z14 L19 27
+Z15 VEKL1>jk=[z6=S]<=VI9:Y0
+Z16 !s100 d5_dGJ^m;^>5Rm:eK_l9=2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Econtrole_tb
+Z17 w1723836190
+R1
+R2
+!i122 4
+R3
+Z18 8/home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle_tb.vhd
+Z19 F/home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle_tb.vhd
+l0
+L4 1
+V0=GS9kOicKz8SO<PnzZV?2
+!s100 3o>ZW>zT;?k?3DnI:GA]]1
+R6
+32
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle_tb.vhd|
+Z21 !s107 /home/victor/Documentos/GitHub/Faculdade/OAC/August_16/controle_tb.vhd|
+!i113 1
+R11
+R12
+Aarch
+R13
+R1
+R2
+DEx4 work 11 controle_tb 0 22 0=GS9kOicKz8SO<PnzZV?2
+!i122 4
+l19
+L7 34
+Ve`LUGfBzm1f9iUfjJiF@a3
+!s100 kVfJjYh0ZJ5i[oS94iUA10
+R6
+32
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12

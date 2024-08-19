@@ -24,11 +24,12 @@
 
 - Programa que deve ser instalado para poder rodar as aplicações em `VHDL`.
 
-- ModelSim 
+- ModelSim
   - [Windows](https://onedrive.live.com/?authkey=%21AAQhkC6aCbFC0Bg&id=E4EB9531A94916BF%21431867&cid=E4EB9531A94916BF&parId=root&parQt=sharedby&o=OneUp)
   - [Ubuntu](https://gist.github.com/Razer6/cafc172b5cffae189b4ecda06cf6c64f)
 
 #### Ubuntu
+
 ```bash
   # Executando essa linha o programa que iremos utilizar para desenvolver uma arquitetura 
   $HOME/intelFPGA/20.1/modelsim_ase/bin/vsim
@@ -37,3 +38,4 @@
 - [VHDL](./July_18/)
 - [Aula Prática - VHDL | Votador](./July_19/)
 - [VHDL - Aula 02](./July_25/)
+- [Aula Prática - Trabalho do Bimestre](./August_16/)

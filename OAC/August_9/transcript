@@ -1,43 +1,32 @@
 # Loading project multiplexador
-# Compile of mux21.vhd was successful.
-# Compile of mux21_tb.vhd was successful.
-# Compile of mux2132.vhd was successful.
-# Compile of mux2132_tb.vhd was successful.
-# Compile of mux41.vhd was successful.
-# Compile of mux41_tb.vhd was successful.
-# 6 compiles, 0 failed with no errors.
-vsim work.mux41_tb
-# vsim work.mux41_tb 
-# Start time: 16:46:45 on Aug 09,2024
-# Loading std.standard
-# ** Error: (vsim-3173) Entity '/home/victor/Documentos/GitHub/Faculdade/OAC/August_9/work.mux41_tb' has no architecture.
-# Error loading design
-# End time: 16:46:46 on Aug 09,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-# Compile of mux21.vhd was successful.
-# Compile of mux21_tb.vhd was successful.
-# Compile of mux2132.vhd was successful.
-# Compile of mux2132_tb.vhd was successful.
-# Compile of mux41.vhd was successful.
-# Compile of mux41_tb.vhd was successful.
-# 6 compiles, 0 failed with no errors.
-vsim work.mux41_tb
-# vsim work.mux41_tb 
-# Start time: 16:47:49 on Aug 09,2024
+# reading /home/victor/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project controle
+# Compile of controle_tb.vhd failed with 3 errors.
+# Compile of controle.vhd was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of controle_tb.vhd was successful.
+# Compile of controle.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.controle_tb
+# vsim work.controle_tb 
+# Start time: 16:22:07 on Aug 16,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.mux41_tb(muxg)
-# Loading work.mux41(mux)
-# Loading work.mux21(mux)
+# Loading work.controle_tb(arch)
+# Loading work.controle(behavioral)
 add wave -position insertpoint  \
-sim:/mux41_tb/A \
-sim:/mux41_tb/B \
-sim:/mux41_tb/C \
-sim:/mux41_tb/D \
-sim:/mux41_tb/S0 \
-sim:/mux41_tb/S1 \
-sim:/mux41_tb/Y
+sim:/controle_tb/OPcode \
+sim:/controle_tb/ALUOp \
+sim:/controle_tb/RegDst \
+sim:/controle_tb/ALUSrc \
+sim:/controle_tb/MemToReg \
+sim:/controle_tb/RegWrite \
+sim:/controle_tb/MemRead \
+sim:/controle_tb/MemWrite \
+sim:/controle_tb/Branch \
+sim:/controle_tb/BranchNE \
+sim:/controle_tb/Jump
 run
 run
 run
@@ -46,19 +35,35 @@ run
 run
 run
 run
+# Break key hit
+# Compile of controle_tb.vhd was successful.
+# Compile of controle.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.controle_tb
+# End time: 16:23:31 on Aug 16,2024, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 10
+# vsim work.controle_tb 
+# Start time: 16:23:31 on Aug 16,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.controle_tb(arch)
+# Loading work.controle(behavioral)
+add wave -position insertpoint  \
+sim:/controle_tb/OPcode \
+sim:/controle_tb/ALUOp \
+sim:/controle_tb/RegDst \
+sim:/controle_tb/ALUSrc \
+sim:/controle_tb/MemToReg \
+sim:/controle_tb/RegWrite \
+sim:/controle_tb/MemRead \
+sim:/controle_tb/MemWrite \
+sim:/controle_tb/Branch \
+sim:/controle_tb/BranchNE \
+sim:/controle_tb/Jump
 run
 run
 run
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 16:52:40 on Aug 09,2024, Elapsed time: 0:04:51
-# Errors: 0, Warnings: 2
+run -all
+run -all
