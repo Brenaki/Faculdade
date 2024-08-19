@@ -28,3 +28,5 @@ main
 *.exe
 forca.c
 *.class
+*.json
+OAC/*/work
