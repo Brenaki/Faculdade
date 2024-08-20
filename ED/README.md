@@ -36,3 +36,4 @@
 - [Filas de prioridade - Heap](./July_30/)
 - [Tabela Hashing](./August_6/)
 - [Tabela Hashing - Lita Encadeada](./August_13/)
+- [Skip list](./August_20/)
