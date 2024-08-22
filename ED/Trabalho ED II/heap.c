@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 200
+#define N 300
 
 typedef struct {
   int values[N + 1];
@@ -19,7 +19,7 @@ int randomNumber(int count) {
 void generateFile() {
   FILE *file;
   file = fopen("numbers.txt", "w");
-  for (int i = 1; i < N + 1; i++) {
+  for (int i = 1; i < 201; i++) {
     fprintf(file, "%d\n", randomNumber(i));
   }
   fclose(file);
@@ -91,7 +91,7 @@ void generateHeap(Heap *heap) {
   FILE *file;
   int aux;
   file = fopen("numbers.txt", "r");
-  for (int i = 0; i < N; i++) {
+  for (int i = 0; i < 200; i++) {
     if (fscanf(file, "%d", &aux) != 1) {
       printf("\nErro em ler o arquivo!\n");
       fclose(file);
@@ -112,38 +112,53 @@ void cls() {
 
 void pause() {
   if (system("pause") != 0) {
-    system("read -p \"Pressione Enter para continuar...\"");
+    system("echo \"Aguarde 3 segundos...\"");
+    system("sleep 3");
   } else {
     system("pause");
   }
 }
 
-void addHeap() { cls(); }
-// void removeHeap(){}
 void printHeap(Heap *heap) {
   int i;
   for (i = 1; i <= heap->size; i++) {
-    printf("%d - ", heap->values[i]);
+    printf("%d ", heap->values[i]);
   }
   printf("\n");
-  system("sleep 3");
+  pause();
   cls();
   return;
 }
 
+void maxNums(Heap *heap) {
+  printf("Top 3 maiores numeros da HEAP:\n");
+  for (int i = 0; i < 3; i++) {
+    printf("%d: %d\n", i + 1, heap->values[i + 1]);
+  }
+}
+
 void menu(Heap *heap) {
-  int choose = 0;
-  while (choose != 4) {
+  int choose = 0, num;
+  while (choose != 7) {
     cls();
-    printf("Choose an option:\n1 - Add numero na heap\n2 - Remove numero da "
-           "heap\n3 - Imprimir heap\n4 - Sair\n\nVocê: ");
+    printf(
+        "Choose an option:\n1 - Add numero na heap\n2 - Remove numero da "
+        "heap\n3 - Imprimir heap\n4 - Gerar o txt\n5 - Colocar os números "
+        "do arquivo na heap\n6 - 3 Maiores numero da heap\n7 - Sair\n\nVocê: ");
     scanf("%d", &choose);
     switch (choose) {
     case 1:
-      addHeap();
+      cls();
+      printf("Qual numero deseja inserir na heap: ");
+      scanf("%d", &num);
+      insertHeap(heap, &num);
+      system("echo \"Elemento Inserido!\"");
       break;
     case 2:
-      // removeHeap();
+      cls();
+      removeHeap(heap);
+      system("echo \"Elemento Removido!\"");
+      pause();
       break;
     case 3:
       cls();
@@ -151,6 +166,23 @@ void menu(Heap *heap) {
       cls();
       break;
     case 4:
+      cls();
+      generateFile();
+      printf("Arquivo gerado!\n");
+      pause();
+      break;
+    case 5:
+      cls();
+      generateHeap(heap);
+      printf("Numeros do arquivos estão na heap!\n");
+      pause();
+      break;
+    case 6:
+      cls();
+      maxNums(heap);
+      pause();
+      break;
+    case 7:
       cls();
       break;
     default:
@@ -163,9 +195,6 @@ void menu(Heap *heap) {
 int main() {
   Heap vet;
   vet.size = 0;
-  generateFile();
-  generateHeap(&vet);
   menu(&vet);
-
   return 0;
 }
