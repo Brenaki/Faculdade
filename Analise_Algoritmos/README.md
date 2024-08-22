@@ -4,3 +4,4 @@
 - [Aula 02 - Princípios de Análise de Algoritmos](./July_25/)
 - [Aula 03 - Princípios de Análise de Algoritmos II](./August_8/)
 - [Aula 04 - Conceitos e Notação Assintótica](./August_15/)
+- [Aula 05 - Indução Matemática e Algoritmos](./August_22/)
