@@ -3,24 +3,26 @@
 #define N 200
 
 typedef struct {
-  int values[N+1];
+  int values[N + 1];
   int size;
 } Heap;
 
-int randomNumber(int count){
-    int num;
-    srand(13);
-    num = rand() % count;
-    return num;
+void menu(Heap *heap);
+
+int randomNumber(int count) {
+  int num;
+  srand(2);
+  num = rand() % count;
+  return num;
 }
 
-void generateFile(){
-    FILE *file;
-    file = fopen("numbers.txt", "w");
-    for(int i = 0; i < N; i++){
-        fprintf(file, "%d\n", randomNumber(N));
-    }
-    fclose(file);
+void generateFile() {
+  FILE *file;
+  file = fopen("numbers.txt", "w");
+  for (int i = 1; i < N + 1; i++) {
+    fprintf(file, "%d\n", randomNumber(i));
+  }
+  fclose(file);
 }
 
 void up(int *heap, int i) {
@@ -86,42 +88,54 @@ void removeHeap(Heap *vet) {
 }
 
 void generateHeap(Heap *heap) {
-    FILE *file;
-    int *aux;
-    file = fopen("numbers.txt", "r");
-    for(int i = 0; i < N; i++){
-        fseek(file, i, SEEK_SET);
-        fread(aux, sizeof(int), 1, file);
-        insertHeap(heap, aux);
+  FILE *file;
+  int aux;
+  file = fopen("numbers.txt", "r");
+  for (int i = 0; i < N; i++) {
+    if (fscanf(file, "%d", &aux) != 1) {
+      printf("\nErro em ler o arquivo!\n");
+      fclose(file);
+      return;
     }
-    fclose(file);
+    insertHeap(heap, &aux);
+  }
+  fclose(file);
 }
 
-void cls(){
+void cls() {
+  if (system("cls") != 0) {
+    system("clear");
+  } else {
     system("cls");
+  }
 }
 
-void pause(){
+void pause() {
+  if (system("pause") != 0) {
+    system("read -p \"Pressione Enter para continuar...\"");
+  } else {
     system("pause");
+  }
 }
 
-void addHeap(){
-  cls();
-}
+void addHeap() { cls(); }
 // void removeHeap(){}
 void printHeap(Heap *heap) {
   int i;
   for (i = 1; i <= heap->size; i++) {
-    printf("%d ", heap->values[i]);
+    printf(" %d", heap->values[i]);
   }
+  return;
 }
 
 void menu(Heap *heap) {
-  cls();
-  int choose;
-  printf("Choose an option:\n1 - Add numero na heap\n2 - Remove numero da heap\n3 - Imprimir heap\n4 - Sair\n");
-  scanf("%d", &choose);
-  switch (choose) {
+  int choose = 0;
+  while (choose != 4) {
+    cls();
+    printf("Choose an option:\n1 - Add numero na heap\n2 - Remove numero da "
+           "heap\n3 - Imprimir heap\n4 - Sair\n\nVocê: ");
+    scanf("%d", &choose);
+    switch (choose) {
     case 1:
       addHeap();
       break;
@@ -129,13 +143,17 @@ void menu(Heap *heap) {
       // removeHeap();
       break;
     case 3:
+      cls();
       printHeap(heap);
+      cls();
       break;
     case 4:
-      return;
+      cls();
+      break;
     default:
       printf("Invalid option\n");
       break;
+    }
   }
 }
 
