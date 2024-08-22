@@ -123,8 +123,11 @@ void addHeap() { cls(); }
 void printHeap(Heap *heap) {
   int i;
   for (i = 1; i <= heap->size; i++) {
-    printf(" %d", heap->values[i]);
+    printf("%d - ", heap->values[i]);
   }
+  printf("\n");
+  system("sleep 3");
+  cls();
   return;
 }
 
