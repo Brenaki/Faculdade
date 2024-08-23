@@ -118,8 +118,6 @@ void pause() {
   if (res != 0) {
     system("echo \"Sistema: Aguarde 3 segundos...\"");
     system("sleep 3");
-  } else {
-    system("pause");
   }
 }
 
