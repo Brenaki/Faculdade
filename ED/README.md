@@ -35,5 +35,7 @@
 - [Mover para frente e transposição | Busca binária](./July_23/)
 - [Filas de prioridade - Heap](./July_30/)
 - [Tabela Hashing](./August_6/)
-- [Tabela Hashing - Lita Encadeada](./August_13/)
+- [Tabela Hashing - Lista Encadeada](./August_13/)
 - [Skip list](./August_20/)
+- [Trabalho II](./Trabalho%20ED%20II/)
+- [Exercicio Tabela Hashing Encadeada](./August_23/hashpointer.c)
