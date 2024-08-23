@@ -62,13 +62,14 @@ void down(int i, Heap *heap) {
 
 void insertHeap(Heap *heap, int *value) {
   if (heap->size == N) {
-    printf("\nHeap cheia\n");
+    printf("\nSistema: Heap cheia\n");
     return;
   }
 
   heap->size++;
   heap->values[heap->size] = *value;
   up(heap->values, heap->size);
+  system("echo \"Sistema: Elemento Inserido!\"");
 }
 
 void removeHeap(Heap *vet) {
@@ -85,6 +86,7 @@ void removeHeap(Heap *vet) {
   x = vet->size;
   vet->size--;
   down(1, vet);
+  system("echo \"Sistema: Elemento Removido!\"");
 }
 
 void generateHeap(Heap *heap) {
@@ -93,7 +95,7 @@ void generateHeap(Heap *heap) {
   file = fopen("numbers.txt", "r");
   for (int i = 0; i < 200; i++) {
     if (fscanf(file, "%d", &aux) != 1) {
-      printf("\nErro em ler o arquivo!\n");
+      printf("\nSistema: Erro em ler o arquivo!\n");
       fclose(file);
       return;
     }
@@ -111,8 +113,10 @@ void cls() {
 }
 
 void pause() {
-  if (system("pause") != 0) {
-    system("echo \"Aguarde 3 segundos...\"");
+  int res = system("pause");
+
+  if (res != 0) {
+    system("echo \"Sistema: Aguarde 3 segundos...\"");
     system("sleep 3");
   } else {
     system("pause");
@@ -121,6 +125,7 @@ void pause() {
 
 void printHeap(Heap *heap) {
   int i;
+  printf("Sistema: HEAP\n");
   for (i = 1; i <= heap->size; i++) {
     printf("%d ", heap->values[i]);
   }
@@ -130,10 +135,30 @@ void printHeap(Heap *heap) {
   return;
 }
 
+void troca(int *a, int *b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
+}
+
 void maxNums(Heap *heap) {
-  printf("Top 3 maiores numeros da HEAP:\n");
+  int top3[3] = {0, 0, 0};
+
+  for (int i = 1; i <= heap->size; i++) {
+    if (heap->values[i] > top3[2]) {
+      top3[2] = heap->values[i];
+      if (top3[1] < top3[2]) {
+        troca(&top3[1], &top3[2]);
+      }
+      if (top3[0] < top3[1]) {
+        troca(&top3[0], &top3[1]);
+      }
+    }
+  }
+
+  printf("Sistema: Top 3 maiores números da HEAP:\n");
   for (int i = 0; i < 3; i++) {
-    printf("%d: %d\n", i + 1, heap->values[i + 1]);
+    printf("%d: %d\n", i, top3[i]);
   }
 }
 
@@ -141,23 +166,21 @@ void menu(Heap *heap) {
   int choose = 0, num;
   while (choose != 7) {
     cls();
-    printf(
-        "Choose an option:\n1 - Add numero na heap\n2 - Remove numero da "
-        "heap\n3 - Imprimir heap\n4 - Gerar o txt\n5 - Colocar os números "
-        "do arquivo na heap\n6 - 3 Maiores numero da heap\n7 - Sair\n\nVocê: ");
+    printf("Escolha uma opção:\n1 - Add numero na heap\n2 - Remove número da "
+           "heap\n3 - Imprimir heap\n4 - Gerar o txt\n5 - Colocar os números "
+           "do arquivo na heap\n6 - Top 3 da heap\n7 - Sair\n\nVocê: ");
     scanf("%d", &choose);
     switch (choose) {
     case 1:
       cls();
-      printf("Qual numero deseja inserir na heap: ");
+      printf("Sistema: Qual numero deseja inserir na heap?\n");
       scanf("%d", &num);
       insertHeap(heap, &num);
-      system("echo \"Elemento Inserido!\"");
+      pause();
       break;
     case 2:
       cls();
       removeHeap(heap);
-      system("echo \"Elemento Removido!\"");
       pause();
       break;
     case 3:
@@ -168,13 +191,13 @@ void menu(Heap *heap) {
     case 4:
       cls();
       generateFile();
-      printf("Arquivo gerado!\n");
+      printf("Sistema: Arquivo gerado!\n");
       pause();
       break;
     case 5:
       cls();
       generateHeap(heap);
-      printf("Numeros do arquivos estão na heap!\n");
+      printf("Sistema: Numeros do arquivos estão na heap!\n");
       pause();
       break;
     case 6:
@@ -186,7 +209,7 @@ void menu(Heap *heap) {
       cls();
       break;
     default:
-      printf("Invalid option\n");
+      printf("Sistema: Opção inválida\n");
       break;
     }
   }
