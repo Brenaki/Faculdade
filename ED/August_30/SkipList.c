@@ -54,8 +54,55 @@ int buscaSkipList(SkipList *sk, int chave){
     return 0;
 }
 
+int sorteiaNivel(SkipList *sk){
+  float r = (float)rand()/RAND_MAX;
+  int nivel = 0;
+  while(r<sk->p && nivel < sk->nivelMax){
+    nivel++;
+    r = (float)rand()/RAND_MAX;
+  }
+  return nivel;
+}
+
+int insereSkipList(SkipList *sk, int chave){
+  if(sk == NULL) return 0;
+  int i;
+  struct no *atual = sk->inicio;
+  struct no **aux;
+  aux = malloc((sk->nivelMax+1)*sizeof(struct no*));
+  for(i=0;i<=sk->nivelMax;i++)
+    aux[i] = NULL;
+  for(i=sk->nivel;i >= 0;i--){
+    while(atual->prox[i] !=NULL && atual->prox[i]->inicio->chave < chave)
+      atual = atual->prox[i];
+    aux[i] = atual;
+  }
+  atual = atual->prox[0];
+
+  if(atual == NULL || atual->chave != chave){
+    int novoNivel = sorteiaNivel(sk);
+    struct no *novo = novoNo(chave, novoNivel);
+    if(novo == NULL){
+      free(aux);
+      return 0;
+    }
+    if(novoNivel > sk->nivel){
+      for(i=sk->nivel+1;i<=novoNivel;i++)
+        aux[i] = sk->inicio;
+      sk->nivel = novoNivel;
+    }
+    for (i=0; i<= novoNivel; i++) {
+      novo->prox[i] = aux[i]->prox[i];
+      aux[i]->prox[i] = novo;
+    }
+    free(aux);
+    return 1;
+  }
+  return -1;
+}
+
 int main(){
   SkipList *sk = criaSkipList(N, 0.5);
-  
+  int x = insereSkipList(sk, 10);  
   return 0;
 }
