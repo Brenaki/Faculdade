@@ -39,3 +39,5 @@
 - [Aula Prática - VHDL | Votador](./July_19/)
 - [VHDL - Aula 02](./July_25/)
 - [Aula Prática - Trabalho do Bimestre](./August_16/)
+- [Aula Prática - Banco](./August_30/)
+- [Aula Prática - ULA](./September_6/)

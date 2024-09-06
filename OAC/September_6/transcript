@@ -1,0 +1,102 @@
+# Loading project ULA
+# Compile of ALUCtrl.vhd was successful.
+# Compile of ULA.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+dataset reload -f
+# Dataset not found: 
+# Compile of ALUCtrl.vhd was successful.
+# Compile of ULA.vhd was successful.
+# Compile of ULA_tb.vhd failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of ALUCtrl.vhd was successful.
+# Compile of ULA.vhd was successful.
+# Compile of ULA_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.alu_tb
+# vsim work.alu_tb 
+# Start time: 15:42:52 on Sep 06,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.alu_tb(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.aluctrl(behavioral)
+add wave -position insertpoint  \
+sim:/alu_tb/A_input \
+sim:/alu_tb/B_input \
+sim:/alu_tb/Zero \
+sim:/alu_tb/ALU_Result \
+sim:/alu_tb/ALUCtr \
+sim:/alu_tb/ALUOp \
+sim:/alu_tb/Instr
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/ALU
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of ALUCtrl.vhd was successful.
+# Compile of ULA.vhd was successful.
+# Compile of ula_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim work.ula_tb
+# End time: 16:39:22 on Sep 06,2024, Elapsed time: 0:56:30
+# Errors: 0, Warnings: 13
+# vsim work.ula_tb 
+# Start time: 16:39:22 on Sep 06,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.ula_tb(rtl)
+# Loading work.alu(behavioral)
+# Loading work.aluctrl(behavioral)
+add wave -position insertpoint  \
+sim:/ula_tb/A_input \
+sim:/ula_tb/B_input \
+sim:/ula_tb/Zero \
+sim:/ula_tb/ALU_Result \
+sim:/ula_tb/ALUCtr \
+sim:/ula_tb/ALUOp \
+sim:/ula_tb/Instr
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /ula_tb/ALU
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /ula_tb/ALU
+run
+run
+run
+run
+# End time: 16:42:46 on Sep 06,2024, Elapsed time: 0:03:24
+# Errors: 0, Warnings: 2

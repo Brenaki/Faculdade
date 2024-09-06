@@ -1,0 +1,49 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+
+entity alu_tb is
+end alu_tb;
+
+
+architecture behavioral of alu_tb is
+-- sinais para a ALU
+signal A_input:   STD_LOGIC_VECTOR (31 downto 0);
+signal B_input:   STD_LOGIC_VECTOR (31 downto 0);
+signal Zero :   STD_LOGIC;
+signal ALU_Result :   STD_LOGIC_VECTOR (31 downto 0);
+signal ALUCtr :  std_logic_vector(2 downto 0);
+-- sinais para ALU_ctrl
+signal ALUOp : STD_LOGIC_VECTOR (1 downto 0);
+signal Instr : STD_LOGIC_VECTOR (5 downto 0); -- campo de função
+
+begin
+
+ALU:	entity work.ALU port map (A_input, B_input, Zero, ALU_Result, ALUCtr);
+ALUCtrl:entity work.ALUCtrl port map (ALUOp, Instr, ALUCtr);
+
+testa: process
+begin
+
+	? atencao - os valores sao diferentes daqueles pedidos no exercício
+
+	A_input <= x"00000001";
+	B_input <= x"00000005";
+	-- simulação do add
+	Instr <= "100000";
+	ALUOP <= "10";
+	wait for 100 ps;
+
+	-- simulação do sub;
+    
+	A_input <= x"00000008";
+	B_input <= x"00000003";
+
+	Instr <= "100010";
+	ALUOP <= "10";
+	wait for 100 ps;
+
+    
+end process;
+
+end;
