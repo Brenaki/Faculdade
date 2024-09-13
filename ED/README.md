@@ -41,3 +41,4 @@
 - [Exercicio Tabela Hashing Encadeada](./August_23/hashpointer.c)
 - [Trabalho III](./August_30/)
 - [Busca en Árvores - Árvore AVL](./September_10)
+- [Árvore AVL](./September_13/)
