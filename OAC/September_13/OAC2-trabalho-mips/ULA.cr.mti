@@ -1,0 +1,80 @@
+D:/OneDrive/Documents/projeto-modelsim-ula/testa.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\OneDrive\Documents\projeto-modelsim-ula\testa.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testa
+-- Compiling architecture X of testa
+-- Loading entity mux2x1
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/DataMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\OneDrive\Documents\projeto-modelsim-ula\DataMemory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MemoriaDados
+-- Compiling architecture Behavioral of MemoriaDados
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/testaDataMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\OneDrive\Documents\projeto-modelsim-ula\testaDataMemory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testaDataMemory
+-- Compiling architecture behavioral of testaDataMemory
+-- Loading entity MemoriaDados
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/ALUCtrl.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\OneDrive\Documents\projeto-modelsim-ula\ALUCtrl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALUCtrl
+-- Compiling architecture Behavioral of ALUCtrl
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/ExtensoraSinal.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Documents/projeto-modelsim-ula/ExtensoraSinal.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ExtensoraSinal
+-- Compiling architecture Behavioral of ExtensoraSinal
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\OneDrive\Documents\projeto-modelsim-ula\ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity ALU
+-- Compiling architecture Behavioral of ALU
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/reg32.vhd {1 {vcom -work work -2002 -explicit -stats=none {D:\OneDrive\Documents\projeto-modelsim-ula\reg32.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg32
+-- Compiling architecture behavioral of reg32
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/mux2x1.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Documents/projeto-modelsim-ula/mux2x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2x1
+-- Compiling architecture Behavioral of mux2x1
+
+} {} {}} D:/OneDrive/Documents/projeto-modelsim-ula/controle.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Documents/projeto-modelsim-ula/controle.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controle
+-- Compiling architecture Behavioral of controle
+
+} {} {}}

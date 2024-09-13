@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.numeric_std.all;  
+
+entity MemoriaDados is
+port (
+ clk: 				 in std_logic;
+ endereco:			 in std_logic_Vector(31 downto 0);
+ wd: 				 in std_logic_Vector(31 downto 0);
+ habilitaEscrita,habilitaLeitura:in std_logic;
+ saida: 		out std_logic_Vector(31 downto 0)
+);
+end MemoriaDados;
+
+architecture Behavioral of MemoriaDados is
+	type memoria is array (0 to 255) of std_logic_vector (31 downto 0);
+	signal RAM: memoria :=((others=> (others=>'0')));
+	signal endereco8bits: std_logic_vector (7 downto 0);
+begin
+
+ -- como são apenas 255 celulas de 32 bits: endereco8bits <= endereco(7 downto 0);
+ process(clk)
+ begin
+  if(rising_edge(clk)) then
+  	if (habilitaEscrita='1') then
+  		ram(to_integer(unsigned(endereco8bits))) <= wd;
+  	end if;
+  end if;
+ end process;
+ saida <= ram(to_integer(unsigned(endereco))) when (habilitaLeitura='1') else x"00000000";
+
+end Behavioral;

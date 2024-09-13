@@ -1,0 +1,110 @@
+/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALUCtrl.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALUCtrl.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALUCtrl
+-- Compiling architecture Behavioral of ALUCtrl
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ExtensoraSinal.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ExtensoraSinal.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ExtensoraSinal
+-- Compiling architecture Behavioral of ExtensoraSinal
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity ALU
+-- Compiling architecture Behavioral of ALU
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/banco.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/banco.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity banco
+-- Compiling architecture behavioral of banco
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/reg32.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/reg32.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg32
+-- Compiling architecture behavioral of reg32
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux2x1.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux2x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2x1
+-- Compiling architecture Behavioral of mux2x1
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/RegisterFile.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/RegisterFile.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity RegisterFile
+-- Compiling architecture behave of RegisterFile
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/controle.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/controle.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controle
+-- Compiling architecture Behavioral of controle
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity testa
+-- Compiling architecture X of testa
+-- Loading entity mux2x1
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux52x1.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux52x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux52x1
+-- Compiling architecture Behavioral of mux52x1
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/DataMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/DataMemory.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MemoriaDados
+-- Compiling architecture Behavioral of MemoriaDados
+
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testaDataMemory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testaDataMemory.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testaDataMemory
+-- Compiling architecture behavioral of testaDataMemory
+-- Loading entity MemoriaDados
+
+} {} {}}

@@ -1,0 +1,42 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity testaDataMemory is
+end testaDataMemory;
+
+architecture behavioral of testaDataMemory is
+	signal clk, habilitaEscrita, habilitaLeitura: std_logic;
+	signal endereco, saida, wd: std_logic_vector(31 downto 0);
+begin
+U1: entity  work.MemoriaDados port map (clk,  endereco, wd, habilitaEscrita, habilitaLeitura, saida);
+
+
+relogio: process
+begin
+	clk<= '0';
+	wait for 50 ps;
+	clk <= '1';
+	wait for 50 ps;
+end process;
+
+
+testa: process
+begin
+	wd <= X"0000001B";
+	endereco <= X"00001111";
+	habilitaEscrita <= '1';
+	habilitaLeitura <= '0';
+	wait for 100 ps;
+
+	habilitaEscrita <= '0';
+	habilitaLeitura <= '1';
+	wait for 100 ps;
+
+
+	
+end process;
+
+end Behavioral;
+
+

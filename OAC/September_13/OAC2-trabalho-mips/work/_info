@@ -1,0 +1,644 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Ealu
+Z0 w1726247418
+Z1 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1860
+Z5 d/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips
+Z6 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALU.vhd
+Z7 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALU.vhd
+l0
+L7 1
+VjfCK@3N;X<F8gZLze71_T1
+!s100 K_fK`1^iG@gkO;[NBOi[@1
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1726257354
+!i10b 1
+Z10 !s108 1726257354.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALU.vhd|
+Z12 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALU.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+R4
+Z15 DEx4 work 3 alu 0 22 jfCK@3N;X<F8gZLze71_T1
+!i122 1860
+l21
+L16 25
+Vg0hBP<D4K>W5z^30jYL]H3
+!s100 VQjnMdhEg^Az4X0XB]KIP3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealuctrl
+R0
+R3
+R4
+!i122 1861
+R5
+Z16 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALUCtrl.vhd
+Z17 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALUCtrl.vhd
+l0
+L4 1
+VdA]Fi?FJ]1Ol0<LOM@>DW0
+!s100 SIjBU:4gdh`YHBgTDQm0X0
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALUCtrl.vhd|
+Z19 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ALUCtrl.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+Z20 DEx4 work 7 aluctrl 0 22 dA]Fi?FJ]1Ol0<LOM@>DW0
+!i122 1861
+l12
+L10 9
+VfV7FdR]PagSK[5n=NLR:h2
+!s100 RJ[BSmZm6oRXPbFo1DQ:E1
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Ebanco
+R0
+Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+!i122 1862
+R5
+Z23 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/banco.vhd
+Z24 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/banco.vhd
+l0
+L6 1
+Vn2hob@7lHcSL]8iV9b<WJ1
+!s100 l?i1_7QFkoQ3k9i0R7=6m2
+R8
+32
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/banco.vhd|
+Z26 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/banco.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R21
+R2
+R22
+R3
+R4
+Z27 DEx4 work 5 banco 0 22 n2hob@7lHcSL]8iV9b<WJ1
+!i122 1862
+l18
+L14 28
+VaLk9Z@P@I;;;J=[=6Qj^]0
+!s100 96lHiK_MWSEcL?[dz71BB0
+R8
+32
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 1
+R13
+R14
+Econtrole
+R0
+R3
+R4
+!i122 1863
+R5
+Z28 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/controle.vhd
+Z29 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/controle.vhd
+l0
+L4 1
+VYh=G3O82P3`0dggUYKH7C2
+!s100 C[@k^5NXHcU209oMJbz8B2
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/controle.vhd|
+Z31 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/controle.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+Z32 DEx4 work 8 controle 0 22 Yh=G3O82P3`0dggUYKH7C2
+!i122 1863
+l22
+L19 26
+VLzR_^F];lb58<EB53H4EC0
+!s100 ]cN7C7^f4:dSzS8aGR[OD3
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Eextensorasinal
+R0
+R21
+R3
+R4
+!i122 1865
+R5
+Z33 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ExtensoraSinal.vhd
+Z34 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ExtensoraSinal.vhd
+l0
+L8 1
+Vzdg[U_TMe6ZQc[9^R1bdj3
+!s100 iPBR<P0]6PV=>5ID5Al=J0
+R8
+32
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ExtensoraSinal.vhd|
+Z36 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/ExtensoraSinal.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R21
+R3
+R4
+Z37 DEx4 work 14 extensorasinal 0 22 zdg[U_TMe6ZQc[9^R1bdj3
+!i122 1865
+l15
+L13 7
+VKKNhIfEogN;?mDOg@0?KM2
+!s100 Sn`LFzf<Io3UgSF2VS=oI2
+R8
+32
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Ememoriadados
+R0
+R21
+R3
+R4
+!i122 1864
+R5
+Z38 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/DataMemory.vhd
+Z39 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/DataMemory.vhd
+l0
+L5 1
+V8cUczem4n=Ei<;k@]mJXm1
+!s100 mU:JdW5@YjcKl_C9]hIQA2
+R8
+32
+R9
+!i10b 1
+R10
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/DataMemory.vhd|
+Z41 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/DataMemory.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R21
+R3
+R4
+Z42 DEx4 work 12 memoriadados 0 22 8cUczem4n=Ei<;k@]mJXm1
+!i122 1864
+l19
+L15 18
+VP?73UVDikgf9h7V?;V^jB0
+!s100 FVRDgTlR`b0;BEVOYJ4d43
+R8
+32
+R9
+!i10b 1
+R10
+R40
+R41
+!i113 1
+R13
+R14
+Emips
+Z43 w1726257346
+R21
+R3
+R4
+!i122 1866
+R5
+Z44 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mips.vhd
+Z45 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mips.vhd
+l0
+L5 1
+V`S`h2`1aObef?]AREgggB2
+!s100 =Am[CPTR`f<P7Ij1k`5[81
+R8
+32
+R9
+!i10b 1
+R10
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mips.vhd|
+Z47 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mips.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+Z48 DEx4 work 7 mux52x1 0 22 9AGHNmfPE5IW13WQF<YH03
+Z49 DEx4 work 6 mux2x1 0 22 jjIf6zBU0b^NH:63DAYcR0
+R22
+R27
+R32
+R20
+R1
+R2
+R15
+R37
+R21
+R3
+R4
+DEx4 work 4 mips 0 22 `S`h2`1aObef?]AREgggB2
+!i122 1866
+l43
+L8 103
+Vgh5Xi`aaLEN_OY5C@a_5`1
+!s100 =^jzjPFZ?ZFiIdH6RIY1M3
+R8
+32
+R9
+!i10b 1
+R10
+R46
+R47
+!i113 1
+R13
+R14
+Emipsprocessor
+Z50 w1726247419
+R21
+R3
+R4
+!i122 1775
+R5
+8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mipsProcessor.vhd
+F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mipsProcessor.vhd
+l0
+L5 1
+V7laPjmC7Oc;N[XCj=^jbQ2
+!s100 _6NCh[9NGYO@He@04RX4K1
+R8
+32
+!s110 1726252674
+!i10b 1
+!s108 1726252674.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mipsProcessor.vhd|
+!s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mipsProcessor.vhd|
+!i113 1
+R13
+R14
+Emultiplexador2x1
+Z51 w1614186593
+R3
+R4
+!i122 90
+Z52 dD:/OneDrive/Documents/projeto-modelsim-ula
+Z53 8D:\OneDrive\Documents\projeto-modelsim-ula\mux2x1.vhd
+Z54 FD:\OneDrive\Documents\projeto-modelsim-ula\mux2x1.vhd
+l0
+L4 1
+VcaIglaB1ML>l9aNIF<O^63
+!s100 B2Y:nX8z3c:jaKJbbL_J:0
+R8
+32
+Z55 !s110 1614196400
+!i10b 1
+Z56 !s108 1614196400.000000
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\OneDrive\Documents\projeto-modelsim-ula\mux2x1.vhd|
+Z58 !s107 D:\OneDrive\Documents\projeto-modelsim-ula\mux2x1.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 16 multiplexador2x1 0 22 caIglaB1ML>l9aNIF<O^63
+!i122 90
+l13
+Z59 L11 8
+V320b]=HMmT5XS?E0K7onC3
+!s100 ZW@SEGgWg27VZ5Mm:i8BG1
+R8
+32
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R13
+R14
+Emux2x1
+R50
+R3
+R4
+!i122 1867
+R5
+Z60 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux2x1.vhd
+Z61 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux2x1.vhd
+l0
+L4 1
+VjjIf6zBU0b^NH:63DAYcR0
+!s100 UT6GcH1jTMW_gWjmDlePj2
+R8
+32
+Z62 !s110 1726257355
+!i10b 1
+R10
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux2x1.vhd|
+Z64 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux2x1.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+R49
+!i122 1867
+l13
+R59
+VzkJN:zj;0Y0PIL0M4O=GZ3
+!s100 Ah88AjKEhGYm]MaYU:AWK1
+R8
+32
+R62
+!i10b 1
+R10
+R63
+R64
+!i113 1
+R13
+R14
+Emux52x1
+R50
+R3
+R4
+!i122 1868
+R5
+Z65 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux52x1.vhd
+Z66 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux52x1.vhd
+l0
+L5 1
+V9AGHNmfPE5IW13WQF<YH03
+!s100 hBk9KH?gQ^H>WY0I@T1092
+R8
+32
+R62
+!i10b 1
+Z67 !s108 1726257355.000000
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux52x1.vhd|
+Z69 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mux52x1.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+R48
+!i122 1868
+l14
+L12 8
+VXnWRj4E6PHOnE^ASX@9Gn3
+!s100 Gf^]:0Pf;1]>l3^>AaNJH1
+R8
+32
+R62
+!i10b 1
+R67
+R68
+R69
+!i113 1
+R13
+R14
+Ereg32
+R50
+R3
+R4
+!i122 1869
+R5
+Z70 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/reg32.vhd
+Z71 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/reg32.vhd
+l0
+L4 1
+VoVnUR@Vneln9Nk@jZSUhM2
+!s100 VVACACVEZ48gHAL2K9dZn0
+R8
+32
+R62
+!i10b 1
+R67
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/reg32.vhd|
+Z73 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/reg32.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 5 reg32 0 22 oVnUR@Vneln9Nk@jZSUhM2
+!i122 1869
+l13
+L11 11
+VQ_JQ8`_J6_0LX;cJb_Q]O0
+!s100 Q[dV?QdZ@nhH6WT4dGJlf2
+R8
+32
+R62
+!i10b 1
+R67
+R72
+R73
+!i113 1
+R13
+R14
+Eregisterfile
+R50
+R21
+R2
+R22
+R3
+R4
+!i122 1870
+R5
+Z74 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/RegisterFile.vhd
+Z75 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/RegisterFile.vhd
+l0
+L6 1
+VLHEQVD9Bza^2e0W7X9ahg1
+!s100 Og<PVIz@46@Ld`;I`j<S_3
+R8
+32
+R62
+!i10b 1
+R67
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/RegisterFile.vhd|
+Z77 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/RegisterFile.vhd|
+!i113 1
+R13
+R14
+Abehave
+R21
+R2
+R22
+R3
+R4
+DEx4 work 12 registerfile 0 22 LHEQVD9Bza^2e0W7X9ahg1
+!i122 1870
+l19
+L14 50
+V:z0EgleE7>YDaBZj76QY;3
+!s100 B8a?@DSihRNSNfn=YlG4z0
+R8
+32
+R62
+!i10b 1
+R67
+R76
+R77
+!i113 1
+R13
+R14
+Etesta
+R50
+R3
+R4
+!i122 1871
+R5
+Z78 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd
+Z79 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd
+l0
+L4 1
+VbIGj0kc2;6lKYVBH4glYm2
+!s100 81Db[jc2HfIFb:WU[UjL03
+R8
+32
+R62
+!i10b 1
+R67
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd|
+Z81 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd|
+!i113 1
+R13
+R14
+Ax
+R49
+R3
+R4
+DEx4 work 5 testa 0 22 bIGj0kc2;6lKYVBH4glYm2
+!i122 1871
+l13
+L7 21
+VO>gER5I>o]0A>1GP6@kNZ1
+!s100 T@W=Y:XbVYT3eQa39WMMJ1
+R8
+32
+R62
+!i10b 1
+R67
+R80
+R81
+!i113 1
+R13
+R14
+Etestadatamemory
+R50
+R21
+R3
+R4
+!i122 1872
+R5
+Z82 8/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testaDataMemory.vhd
+Z83 F/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testaDataMemory.vhd
+l0
+L5 1
+V99ML<>gF6c_lgJ>RgJVU01
+!s100 S9oO8;Sn^8dL?TQdldl`A0
+R8
+32
+R62
+!i10b 1
+R67
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testaDataMemory.vhd|
+Z85 !s107 /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testaDataMemory.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R42
+R21
+R3
+R4
+Z86 DEx4 work 15 testadatamemory 0 22 99ML<>gF6c_lgJ>RgJVU01
+!i122 1872
+l11
+Z87 L8 33
+Z88 VVI]eg[5GTnJG=a@m<3F1C1
+Z89 !s100 hMa6c4PRjfCTo6U=^QR^<0
+R8
+32
+R62
+!i10b 1
+R67
+R84
+R85
+!i113 1
+R13
+R14

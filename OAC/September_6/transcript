@@ -1,102 +1,442 @@
 # Loading project ULA
+# reading /home/brenaki/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project mips-unique-cicle
+# Compile of ALU.vhd was successful.
 # Compile of ALUCtrl.vhd was successful.
-# Compile of ULA.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-dataset reload -f
-# Dataset not found: 
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd failed with 6 errors.
+# Compile of mipsProcessor.vhd failed with 3 errors.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 14 compiles, 2 failed with 9 errors.
+# Compile of ALU.vhd was successful.
 # Compile of ALUCtrl.vhd was successful.
-# Compile of ULA.vhd was successful.
-# Compile of ULA_tb.vhd failed with 1 errors.
-# 3 compiles, 1 failed with 1 error.
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd failed with 6 errors.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 1 failed with 6 errors.
+# Compile of ALU.vhd was successful.
 # Compile of ALUCtrl.vhd was successful.
-# Compile of ULA.vhd was successful.
-# Compile of ULA_tb.vhd was successful.
-# 3 compiles, 0 failed with no errors.
-vsim work.alu_tb
-# vsim work.alu_tb 
-# Start time: 15:42:52 on Sep 06,2024
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd failed with 1 errors.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 1 failed with 1 error.
+# Compile of ALU.vhd was successful.
+# Compile of ALUCtrl.vhd was successful.
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd failed with 1 errors.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 1 failed with 1 error.
+# Compile of ALU.vhd was successful.
+# Compile of ALUCtrl.vhd was successful.
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd was successful.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim work.mips
+# vsim work.mips 
+# Start time: 16:29:24 on Sep 13,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
-# Loading work.alu_tb(behavioral)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mips(behavioral)
+# Loading work.extensorasinal(behavioral)
 # Loading work.alu(behavioral)
 # Loading work.aluctrl(behavioral)
+# Loading work.controle(behavioral)
+# Loading work.banco(behavioral)
+# Loading work.mux2x1(behavioral)
+# Loading work.mux52x1(behavioral)
 add wave -position insertpoint  \
-sim:/alu_tb/A_input \
-sim:/alu_tb/B_input \
-sim:/alu_tb/Zero \
-sim:/alu_tb/ALU_Result \
-sim:/alu_tb/ALUCtr \
-sim:/alu_tb/ALUOp \
-sim:/alu_tb/Instr
-run
+sim:/mips/clock \
+sim:/mips/rs \
+sim:/mips/rd \
+sim:/mips/rt \
+sim:/mips/wa \
+sim:/mips/imediato \
+sim:/mips/campoFuncao \
+sim:/mips/codigoOperacao \
+sim:/mips/wd \
+sim:/mips/RamDataOut \
+sim:/mips/d1 \
+sim:/mips/d2 \
+sim:/mips/sinalExtendido \
+sim:/mips/zero \
+sim:/mips/ALUresult \
+sim:/mips/input2ALU \
+sim:/mips/ALUctrl \
+sim:/mips/ALUOp \
+sim:/mips/RegDst \
+sim:/mips/ALUSrc \
+sim:/mips/MemToReg \
+sim:/mips/RegWrite \
+sim:/mips/MemRead \
+sim:/mips/MemWrite \
+sim:/mips/Branch \
+sim:/mips/Jump \
+sim:/mips/BranchNE \
+sim:/mips/rst \
+sim:/mips/instrucao \
+sim:/mips/saidaReg
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/mips/clock \
+sim:/mips/rs \
+sim:/mips/rd \
+sim:/mips/rt \
+sim:/mips/wa \
+sim:/mips/imediato \
+sim:/mips/campoFuncao \
+sim:/mips/codigoOperacao \
+sim:/mips/wd \
+sim:/mips/RamDataOut \
+sim:/mips/d1 \
+sim:/mips/d2 \
+sim:/mips/sinalExtendido \
+sim:/mips/zero \
+sim:/mips/ALUresult \
+sim:/mips/input2ALU \
+sim:/mips/ALUctrl \
+sim:/mips/ALUOp \
+sim:/mips/RegDst \
+sim:/mips/ALUSrc \
+sim:/mips/MemToReg \
+sim:/mips/RegWrite \
+sim:/mips/MemRead \
+sim:/mips/MemWrite \
+sim:/mips/Branch \
+sim:/mips/Jump \
+sim:/mips/BranchNE \
+sim:/mips/rst \
+sim:/mips/instrucao \
+sim:/mips/saidaReg
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/mips/clock \
+sim:/mips/rs \
+sim:/mips/rd \
+sim:/mips/rt \
+sim:/mips/wa \
+sim:/mips/imediato \
+sim:/mips/campoFuncao \
+sim:/mips/codigoOperacao \
+sim:/mips/wd \
+sim:/mips/RamDataOut \
+sim:/mips/d1 \
+sim:/mips/d2 \
+sim:/mips/sinalExtendido \
+sim:/mips/zero \
+sim:/mips/ALUresult \
+sim:/mips/input2ALU \
+sim:/mips/ALUctrl \
+sim:/mips/ALUOp \
+sim:/mips/RegDst \
+sim:/mips/ALUSrc \
+sim:/mips/MemToReg \
+sim:/mips/RegWrite \
+sim:/mips/MemRead \
+sim:/mips/MemWrite \
+sim:/mips/Branch \
+sim:/mips/Jump \
+sim:/mips/BranchNE \
+sim:/mips/rst \
+sim:/mips/instrucao \
+sim:/mips/saidaReg
+# Compile of ALU.vhd was successful.
 # Compile of ALUCtrl.vhd was successful.
-# Compile of ULA.vhd was successful.
-# Compile of ula_tb.vhd was successful.
-# 3 compiles, 0 failed with no errors.
-vsim work.ula_tb
-# End time: 16:39:22 on Sep 06,2024, Elapsed time: 0:56:30
-# Errors: 0, Warnings: 13
-# vsim work.ula_tb 
-# Start time: 16:39:22 on Sep 06,2024
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd was successful.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+# Compile of ALU.vhd was successful.
+# Compile of ALUCtrl.vhd was successful.
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd was successful.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim work.mips
+# End time: 16:42:00 on Sep 13,2024, Elapsed time: 0:12:36
+# Errors: 0, Warnings: 40
+# vsim work.mips 
+# Start time: 16:42:00 on Sep 13,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
-# Loading work.ula_tb(rtl)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mips(behavioral)
+# Loading work.extensorasinal(behavioral)
 # Loading work.alu(behavioral)
 # Loading work.aluctrl(behavioral)
+# Loading work.controle(behavioral)
+# Loading work.banco(behavioral)
+# Loading work.mux2x1(behavioral)
+# Loading work.mux52x1(behavioral)
 add wave -position insertpoint  \
-sim:/ula_tb/A_input \
-sim:/ula_tb/B_input \
-sim:/ula_tb/Zero \
-sim:/ula_tb/ALU_Result \
-sim:/ula_tb/ALUCtr \
-sim:/ula_tb/ALUOp \
-sim:/ula_tb/Instr
-run -all
+sim:/mips/clock \
+sim:/mips/rs \
+sim:/mips/rd \
+sim:/mips/rt \
+sim:/mips/wa \
+sim:/mips/imediato \
+sim:/mips/campoFuncao \
+sim:/mips/codigoOperacao \
+sim:/mips/wd \
+sim:/mips/RamDataOut \
+sim:/mips/d1 \
+sim:/mips/d2 \
+sim:/mips/sinalExtendido \
+sim:/mips/zero \
+sim:/mips/ALUresult \
+sim:/mips/input2ALU \
+sim:/mips/ALUctrl \
+sim:/mips/ALUOp \
+sim:/mips/RegDst \
+sim:/mips/ALUSrc \
+sim:/mips/MemToReg \
+sim:/mips/RegWrite \
+sim:/mips/MemRead \
+sim:/mips/MemWrite \
+sim:/mips/Branch \
+sim:/mips/Jump \
+sim:/mips/BranchNE \
+sim:/mips/rst \
+sim:/mips/instrucao \
+sim:/mips/saidaReg
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ula_tb/ALU
-run -all
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
 run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
+run
+run
+run
+run
+run
+run
+# Compile of ALU.vhd was successful.
+# Compile of ALUCtrl.vhd was successful.
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd was successful.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim work.mips
+# End time: 16:56:04 on Sep 13,2024, Elapsed time: 0:14:04
+# Errors: 0, Warnings: 17
+# vsim work.mips 
+# Start time: 16:56:04 on Sep 13,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mips(behavioral)
+# Loading work.extensorasinal(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.aluctrl(behavioral)
+# Loading work.controle(behavioral)
+# Loading work.banco(behavioral)
+# Loading work.mux2x1(behavioral)
+# Loading work.mux52x1(behavioral)
+add wave -position insertpoint  \
+sim:/mips/clock \
+sim:/mips/rs \
+sim:/mips/rd \
+sim:/mips/rt \
+sim:/mips/wa \
+sim:/mips/imediato \
+sim:/mips/campoFuncao \
+sim:/mips/codigoOperacao \
+sim:/mips/wd \
+sim:/mips/RamDataOut \
+sim:/mips/d1 \
+sim:/mips/d2 \
+sim:/mips/sinalExtendido \
+sim:/mips/zero \
+sim:/mips/ALUresult \
+sim:/mips/input2ALU \
+sim:/mips/ALUctrl \
+sim:/mips/ALUOp \
+sim:/mips/RegDst \
+sim:/mips/ALUSrc \
+sim:/mips/MemToReg \
+sim:/mips/RegWrite \
+sim:/mips/MemRead \
+sim:/mips/MemWrite \
+sim:/mips/Branch \
+sim:/mips/Jump \
+sim:/mips/BranchNE \
+sim:/mips/rst \
+sim:/mips/instrucao \
+sim:/mips/saidaReg
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /ula_tb/ALU
+#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
 run
 run
 run
 run
-# End time: 16:42:46 on Sep 06,2024, Elapsed time: 0:03:24
-# Errors: 0, Warnings: 2
+run
+run
+run
+run
