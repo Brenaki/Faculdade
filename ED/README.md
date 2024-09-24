@@ -42,3 +42,4 @@
 - [Trabalho III](./August_30/)
 - [Busca en Árvores - Árvore AVL](./September_10)
 - [Árvore AVL](./September_13/)
+- [Árvore Preta Vermelha](./September_24/)
