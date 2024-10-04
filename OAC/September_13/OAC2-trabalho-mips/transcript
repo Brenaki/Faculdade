@@ -1,4 +1,6 @@
 # Loading project mips-unique-cicle
+# Compile of yuri.vhd was successful.
+# Load canceled
 # Compile of ALU.vhd was successful.
 # Compile of ALUCtrl.vhd was successful.
 # Compile of banco.vhd was successful.
@@ -12,336 +14,27 @@
 # Compile of RegisterFile.vhd was successful.
 # Compile of testa.vhd was successful.
 # Compile of testaDataMemory.vhd was successful.
-# 13 compiles, 0 failed with no errors.
+# Compile of yuri.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of ALU.vhd was successful.
+# Compile of ALUCtrl.vhd was successful.
+# Compile of banco.vhd was successful.
+# Compile of controle.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ExtensoraSinal.vhd was successful.
+# Compile of mips.vhd was successful.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux52x1.vhd was successful.
+# Compile of reg32.vhd was successful.
+# Compile of RegisterFile.vhd was successful.
+# Compile of testa.vhd was successful.
+# Compile of testaDataMemory.vhd was successful.
+# Compile of yuri.vhd was successful.
+# 14 compiles, 0 failed with no errors.
 vsim work.mips
 # vsim work.mips 
-# Start time: 17:12:47 on Sep 13,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.mips(behavioral)
-# Loading work.extensorasinal(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.aluctrl(behavioral)
-# Loading work.controle(behavioral)
-# Loading work.banco(behavioral)
-# Loading work.mux2x1(behavioral)
-# Loading work.mux52x1(behavioral)
-add wave -position insertpoint  \
-sim:/mips/clock \
-sim:/mips/rs \
-sim:/mips/rd \
-sim:/mips/rt \
-sim:/mips/wa \
-sim:/mips/imediato \
-sim:/mips/campoFuncao \
-sim:/mips/codigoOperacao \
-sim:/mips/wd \
-sim:/mips/RamDataOut \
-sim:/mips/d1 \
-sim:/mips/d2 \
-sim:/mips/sinalExtendido \
-sim:/mips/zero \
-sim:/mips/ALUresult \
-sim:/mips/input2ALU \
-sim:/mips/ALUctrl \
-sim:/mips/ALUOp \
-sim:/mips/RegDst \
-sim:/mips/ALUSrc \
-sim:/mips/MemToReg \
-sim:/mips/RegWrite \
-sim:/mips/MemRead \
-sim:/mips/MemWrite \
-sim:/mips/Branch \
-sim:/mips/Jump \
-sim:/mips/BranchNE \
-sim:/mips/rst \
-sim:/mips/instrucao \
-sim:/mips/saidaReg
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-run
-run
-run
-run
-run
-run
-run
-# Compile of ALU.vhd was successful.
-# Compile of ALUCtrl.vhd was successful.
-# Compile of banco.vhd was successful.
-# Compile of controle.vhd was successful.
-# Compile of DataMemory.vhd was successful.
-# Compile of ExtensoraSinal.vhd was successful.
-# Compile of mips.vhd was successful.
-# Compile of mux2x1.vhd was successful.
-# Compile of mux52x1.vhd was successful.
-# Compile of reg32.vhd was successful.
-# Compile of RegisterFile.vhd was successful.
-# Compile of testa.vhd was successful.
-# Compile of testaDataMemory.vhd was successful.
-# 13 compiles, 0 failed with no errors.
-vsim work.mips
-# End time: 17:17:09 on Sep 13,2024, Elapsed time: 0:04:22
-# Errors: 0, Warnings: 18
-# vsim work.mips 
-# Start time: 17:17:09 on Sep 13,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.mips(behavioral)
-# Loading work.extensorasinal(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.aluctrl(behavioral)
-# Loading work.controle(behavioral)
-# Loading work.banco(behavioral)
-# Loading work.mux2x1(behavioral)
-# Loading work.mux52x1(behavioral)
-add wave -position insertpoint  \
-sim:/mips/clock \
-sim:/mips/rs \
-sim:/mips/rd \
-sim:/mips/rt \
-sim:/mips/wa \
-sim:/mips/imediato \
-sim:/mips/campoFuncao \
-sim:/mips/codigoOperacao \
-sim:/mips/wd \
-sim:/mips/RamDataOut \
-sim:/mips/d1 \
-sim:/mips/d2 \
-sim:/mips/sinalExtendido \
-sim:/mips/zero \
-sim:/mips/ALUresult \
-sim:/mips/input2ALU \
-sim:/mips/ALUctrl \
-sim:/mips/ALUOp \
-sim:/mips/RegDst \
-sim:/mips/ALUSrc \
-sim:/mips/MemToReg \
-sim:/mips/RegWrite \
-sim:/mips/MemRead \
-sim:/mips/MemWrite \
-sim:/mips/Branch \
-sim:/mips/Jump \
-sim:/mips/BranchNE \
-sim:/mips/rst \
-sim:/mips/instrucao \
-sim:/mips/saidaReg
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-run
-run
-run
-run
-run
-run
-run
-# Compile of ALU.vhd was successful.
-# Compile of ALUCtrl.vhd was successful.
-# Compile of banco.vhd was successful.
-# Compile of controle.vhd was successful.
-# Compile of DataMemory.vhd was successful.
-# Compile of ExtensoraSinal.vhd was successful.
-# Compile of mips.vhd was successful.
-# Compile of mux2x1.vhd was successful.
-# Compile of mux52x1.vhd was successful.
-# Compile of reg32.vhd was successful.
-# Compile of RegisterFile.vhd was successful.
-# Compile of testa.vhd was successful.
-# Compile of testaDataMemory.vhd was successful.
-# 13 compiles, 0 failed with no errors.
-vsim work.mips
-# End time: 17:18:56 on Sep 13,2024, Elapsed time: 0:01:47
-# Errors: 0, Warnings: 17
-# vsim work.mips 
-# Start time: 17:18:56 on Sep 13,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.mips(behavioral)
-# Loading work.extensorasinal(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.aluctrl(behavioral)
-# Loading work.controle(behavioral)
-# Loading work.banco(behavioral)
-# Loading work.mux2x1(behavioral)
-# Loading work.mux52x1(behavioral)
-add wave -position insertpoint  \
-sim:/mips/clock \
-sim:/mips/rs \
-sim:/mips/rd \
-sim:/mips/rt \
-sim:/mips/wa \
-sim:/mips/imediato \
-sim:/mips/campoFuncao \
-sim:/mips/codigoOperacao \
-sim:/mips/wd \
-sim:/mips/RamDataOut \
-sim:/mips/d1 \
-sim:/mips/d2 \
-sim:/mips/sinalExtendido \
-sim:/mips/zero \
-sim:/mips/ALUresult \
-sim:/mips/input2ALU \
-sim:/mips/ALUctrl \
-sim:/mips/ALUOp \
-sim:/mips/RegDst \
-sim:/mips/ALUSrc \
-sim:/mips/MemToReg \
-sim:/mips/RegWrite \
-sim:/mips/MemRead \
-sim:/mips/MemWrite \
-sim:/mips/Branch \
-sim:/mips/Jump \
-sim:/mips/BranchNE \
-sim:/mips/rst \
-sim:/mips/instrucao \
-sim:/mips/saidaReg
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-run
-run
-run
-run
-run
-run
-run
-# Compile of ALU.vhd was successful.
-# Compile of ALUCtrl.vhd was successful.
-# Compile of banco.vhd was successful.
-# Compile of controle.vhd was successful.
-# Compile of DataMemory.vhd was successful.
-# Compile of ExtensoraSinal.vhd was successful.
-# Compile of mips.vhd was successful.
-# Compile of mux2x1.vhd was successful.
-# Compile of mux52x1.vhd was successful.
-# Compile of reg32.vhd was successful.
-# Compile of RegisterFile.vhd was successful.
-# Compile of testa.vhd was successful.
-# Compile of testaDataMemory.vhd was successful.
-# 13 compiles, 0 failed with no errors.
-# Compile of ALU.vhd was successful.
-# Compile of ALUCtrl.vhd was successful.
-# Compile of banco.vhd was successful.
-# Compile of controle.vhd was successful.
-# Compile of DataMemory.vhd was successful.
-# Compile of ExtensoraSinal.vhd was successful.
-# Compile of mips.vhd was successful.
-# Compile of mux2x1.vhd was successful.
-# Compile of mux52x1.vhd was successful.
-# Compile of reg32.vhd was successful.
-# Compile of RegisterFile.vhd was successful.
-# Compile of testa.vhd was successful.
-# Compile of testaDataMemory.vhd was successful.
-# 13 compiles, 0 failed with no errors.
-vsim work.mips
-# End time: 17:20:53 on Sep 13,2024, Elapsed time: 0:01:57
-# Errors: 0, Warnings: 18
-# vsim work.mips 
-# Start time: 17:20:53 on Sep 13,2024
+# Start time: 10:13:09 on Oct 04,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -430,12 +123,6 @@ run
 run
 run
 run
-run
-run
-run
-run
-run
-run
 # Compile of ALU.vhd was successful.
 # Compile of ALUCtrl.vhd was successful.
 # Compile of banco.vhd was successful.
@@ -450,97 +137,5 @@ run
 # Compile of testa.vhd was successful.
 # Compile of testaDataMemory.vhd was successful.
 # 13 compiles, 0 failed with no errors.
-vsim work.mips
-# End time: 17:25:11 on Sep 13,2024, Elapsed time: 0:04:18
-# Errors: 0, Warnings: 17
-# vsim work.mips 
-# Start time: 17:25:11 on Sep 13,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.mips(behavioral)
-# Loading work.extensorasinal(behavioral)
-# Loading work.alu(behavioral)
-# Loading work.aluctrl(behavioral)
-# Loading work.controle(behavioral)
-# Loading work.banco(behavioral)
-# Loading work.mux2x1(behavioral)
-# Loading work.mux52x1(behavioral)
-add wave -position insertpoint  \
-sim:/mips/clock \
-sim:/mips/rs \
-sim:/mips/rd \
-sim:/mips/rt \
-sim:/mips/wa \
-sim:/mips/imediato \
-sim:/mips/campoFuncao \
-sim:/mips/codigoOperacao \
-sim:/mips/wd \
-sim:/mips/RamDataOut \
-sim:/mips/d1 \
-sim:/mips/d2 \
-sim:/mips/sinalExtendido \
-sim:/mips/zero \
-sim:/mips/ALUresult \
-sim:/mips/input2ALU \
-sim:/mips/ALUctrl \
-sim:/mips/ALUOp \
-sim:/mips/RegDst \
-sim:/mips/ALUSrc \
-sim:/mips/MemToReg \
-sim:/mips/RegWrite \
-sim:/mips/MemRead \
-sim:/mips/MemWrite \
-sim:/mips/Branch \
-sim:/mips/Jump \
-sim:/mips/BranchNE \
-sim:/mips/rst \
-sim:/mips/instrucao \
-sim:/mips/saidaReg
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U5
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /mips/U2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 100 ps  Iteration: 1  Instance: /mips/U5
-run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 150 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 200 ps  Iteration: 1  Instance: /mips/U5
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 17:30:39 on Sep 13,2024, Elapsed time: 0:05:28
-# Errors: 0, Warnings: 16
+# End time: 10:16:45 on Oct 04,2024, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 22

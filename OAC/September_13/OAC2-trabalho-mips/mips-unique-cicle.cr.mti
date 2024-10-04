@@ -71,6 +71,29 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity controle
 -- Compiling architecture Behavioral of controle
 
+} {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mips.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/mips.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mips
+-- Compiling architecture behavioral of mips
+-- Loading entity ExtensoraSinal
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading entity ALU
+-- Loading entity ALUCtrl
+-- Loading entity controle
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity banco
+-- Loading entity mux2x1
+-- Loading entity mux52x1
+-- Compiling entity mips
+-- Compiling architecture behavioral of mips
+-- Compiling entity mips
+-- Compiling architecture behavioral of mips
+
 } {} {}} /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/brenaki/Documentos/github/Faculdade/OAC/September_13/OAC2-trabalho-mips/testa.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
