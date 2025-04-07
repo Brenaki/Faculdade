@@ -1,0 +1,16 @@
+*Obrigatório:*
+
+[] - [REMOVE] Limpar memória por endereço
+[] - [ADD] Botão de ponteiros de alocação
+[] - [ADD] "Ponteiros" de cada espaço de memória alocada e livre
+[] - [ADD] Manipulação de livramento de espaço
+[] - [ADD] First Fit
+[] - [ADD] Worst Fit
+[] - [ADD] Best Fit
+
+
+*Opicional:*
+
+[] - [ADD] Melhor vizualização da memória
+[] - [REFACTOR] Simplificar o código onde é possível
+

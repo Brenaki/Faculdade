@@ -30,3 +30,5 @@ forca.c
 *.class
 *.json
 OAC/*/work
+
+SO/.venv
