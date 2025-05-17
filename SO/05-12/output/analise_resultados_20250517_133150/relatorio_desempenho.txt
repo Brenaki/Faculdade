@@ -1,0 +1,153 @@
+Relatório de Desempenho - Cópia de Arquivos
+==================================================
+
+Arquivos Processados:
+--------------------
+- copia128MB.csv
+- copia1GB.csv
+- copia256MB.csv
+- copia2GB.csv
+- copia512MB.csv
+
+1. Análise por Arquivo
+--------------------
+
+Arquivo: copia128MB
+Total de testes: 16
+Tamanho médio dos arquivos: 128.00 MB
+Tempo médio total: 99.8834 segundos
+Taxa de transferência média: 41.32 MB/s
+
+Arquivo: copia1GB
+Total de testes: 16
+Tamanho médio dos arquivos: 664.18 MB
+Tempo médio total: 519.0705 segundos
+Taxa de transferência média: 32.73 MB/s
+
+Arquivo: copia256MB
+Total de testes: 16
+Tamanho médio dos arquivos: 256.00 MB
+Tempo médio total: 181.4007 segundos
+Taxa de transferência média: 46.23 MB/s
+
+Arquivo: copia2GB
+Total de testes: 16
+Tamanho médio dos arquivos: 2048.00 MB
+Tempo médio total: 1862.4796 segundos
+Taxa de transferência média: 26.48 MB/s
+
+Arquivo: copia512MB
+Total de testes: 16
+Tamanho médio dos arquivos: 512.00 MB
+Tempo médio total: 391.4792 segundos
+Taxa de transferência média: 41.22 MB/s
+
+
+2. Análise por Método
+--------------------
+
+Método: fread/fwrite
+Tempo médio: 616.2756 segundos
+Taxa de transferência média: 49.86 MB/s
+Melhor tamanho de buffer: 1024.00 KB
+Desvio padrão do tempo: 2051.6079 segundos
+
+Método: read/write
+Tempo médio: 605.4497 segundos
+Taxa de transferência média: 25.33 MB/s
+Melhor tamanho de buffer: 1024.00 KB
+Desvio padrão do tempo: 1903.5167 segundos
+
+
+3. Análise por Tamanho de Buffer
+--------------------
+
+Tamanho de Buffer: 0.50 KB
+  fread/fwrite:
+    Tempo médio: 3991.0684 segundos
+    Taxa média: 0.20 MB/s
+    Desvio padrão: 4908.0353 segundos
+  read/write:
+    Tempo médio: 3865.6926 segundos
+    Taxa média: 0.20 MB/s
+    Desvio padrão: 4409.9646 segundos
+
+Tamanho de Buffer: 4.00 KB
+  fread/fwrite:
+    Tempo médio: 494.3398 segundos
+    Taxa média: 1.58 MB/s
+    Desvio padrão: 570.6164 segundos
+  read/write:
+    Tempo médio: 506.2342 segundos
+    Taxa média: 1.53 MB/s
+    Desvio padrão: 573.9044 segundos
+
+Tamanho de Buffer: 8.00 KB
+  fread/fwrite:
+    Tempo médio: 248.5698 segundos
+    Taxa média: 3.15 MB/s
+    Desvio padrão: 287.4097 segundos
+  read/write:
+    Tempo médio: 254.7044 segundos
+    Taxa média: 3.07 MB/s
+    Desvio padrão: 292.2979 segundos
+
+Tamanho de Buffer: 16.00 KB
+  fread/fwrite:
+    Tempo médio: 130.2336 segundos
+    Taxa média: 5.97 MB/s
+    Desvio padrão: 144.1598 segundos
+  read/write:
+    Tempo médio: 132.2744 segundos
+    Taxa média: 5.87 MB/s
+    Desvio padrão: 149.6042 segundos
+
+Tamanho de Buffer: 64.00 KB
+  fread/fwrite:
+    Tempo médio: 33.3512 segundos
+    Taxa média: 24.16 MB/s
+    Desvio padrão: 39.3989 segundos
+  read/write:
+    Tempo médio: 37.5240 segundos
+    Taxa média: 20.58 MB/s
+    Desvio padrão: 43.8373 segundos
+
+Tamanho de Buffer: 128.00 KB
+  fread/fwrite:
+    Tempo médio: 17.5898 segundos
+    Taxa média: 45.99 MB/s
+    Desvio padrão: 21.1217 segundos
+  read/write:
+    Tempo médio: 22.5058 segundos
+    Taxa média: 35.12 MB/s
+    Desvio padrão: 26.6184 segundos
+
+Tamanho de Buffer: 256.00 KB
+  fread/fwrite:
+    Tempo médio: 10.2406 segundos
+    Taxa média: 85.92 MB/s
+    Desvio padrão: 12.8420 segundos
+  read/write:
+    Tempo médio: 15.4786 segundos
+    Taxa média: 49.65 MB/s
+    Desvio padrão: 17.5866 segundos
+
+Tamanho de Buffer: 1024.00 KB
+  fread/fwrite:
+    Tempo médio: 4.8118 segundos
+    Taxa média: 231.92 MB/s
+    Desvio padrão: 7.0880 segundos
+  read/write:
+    Tempo médio: 9.1838 segundos
+    Taxa média: 86.64 MB/s
+    Desvio padrão: 10.9162 segundos
+
+
+4. Conclusões
+--------------------
+
+Melhor método geral: read/write
+Melhor tamanho de buffer geral: 1024.00 KB
+Taxa de transferência máxima: 296.98 MB/s
+Taxa de transferência média geral: 37.60 MB/s
+Tempo médio geral: 610.8627 segundos
