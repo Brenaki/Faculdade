@@ -230,14 +230,36 @@ int main(int argc, char* argv[]) {
     
     // Tamanhos de buffer para teste
     const size_t buffer_sizes[] = {
-        512,      // 0.5 KB
+        1,        // 0.001 KB
+        2,        // 0.002 KB
+        4,        // 0.004 KB
+        8,        // 0.008 KB
+        12,       // 0.012 KB
+        16,       // 0.016 KB
+        20,       // 0.020 KB
+        24,       // 0.024 KB
+        28,       // 0.028 KB 
+        32,       // 0.032 KB
+        64,       // 0.064 KB
+        128,      // 0.128 KB
+        256,      // 0.256 KB
+        512,      // 0.512 KB
+        1024,     // 1 KB
+        2048,     // 2 KB
         4096,     // 4 KB
         8192,     // 8 KB
+        12288,    // 12 KB
         16384,    // 16 KB
+        20480,    // 20 KB
+        24576,    // 24 KB
+        28672,    // 28 KB
+        32768,    // 32 KB
         65536,    // 64 KB
         131072,   // 128 KB
         262144,   // 256 KB
-        1048576   // 1 MB
+        524288,   // 512 KB
+        1048576,  // 1 MB
+        2097152   // 2 MB
     };
     
     // Cria/limpa o arquivo de log e escreve o cabeçalho
