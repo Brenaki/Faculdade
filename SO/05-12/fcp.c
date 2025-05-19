@@ -47,10 +47,10 @@ void show_progress(long current, long total, const char* method) {
 size_t get_block_size(const char* path) {
     struct stat st;
     if (stat(path, &st) == 0) {
-        // No Windows, usaremos um tamanho de bloco padrão já que st_blksize não está disponível
-        return 4096; // Padrão de 4KB que é comum
+        return st.st_blksize;
     }
-    return 4096; // Valor padrão caso stat falhe
+    
+    return 4096; // Fallback para o valor padrão
 }
 
 // Cópia usando fread/fwrite com buffer personalizado
