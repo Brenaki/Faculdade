@@ -9,7 +9,7 @@
 #include <fcntl.h>
 
 #ifndef N_NOTAS
-   #define N_NOTAS  200
+   #define N_NOTAS  1000000
 #endif
 
 void main( int argc, char *argv[] )
