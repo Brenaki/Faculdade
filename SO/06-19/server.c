@@ -17,6 +17,8 @@
 #include <unistd.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <time.h>
+#include <dirent.h>
 
 #include "server.h"
 
@@ -249,6 +251,20 @@ static void handle_get (int connection_fd, const char* page)
   /* Mostrar a URL limpa no terminal */
   fprintf(stderr, "Cliente acessando módulo: %s\n", current_url);
 
+  // Adicionar registro de acesso do usuário
+  FILE *logf = fopen("user_access.log", "a");
+  if (logf) {
+    time_t now = time(NULL);
+    struct tm *tm_info = localtime(&now);
+    char timebuf[32];
+    strftime(timebuf, sizeof(timebuf), "%Y-%m-%d %H:%M:%S", tm_info);
+
+    // Tenta pegar o IP do cliente (se possível)
+    // Aqui, você pode passar o IP como argumento para handle_get, se quiser detalhar mais.
+    fprintf(logf, "[%s] %s\n", timebuf, current_url);
+    fclose(logf);
+  }
+
   /* Extrair apenas o caminho base antes do '?' */
   char path_only[256];
   size_t i = 0;
@@ -257,6 +273,171 @@ static void handle_get (int connection_fd, const char* page)
     i++;
   }
   path_only[i] = '\0';
+
+  /* Se for a rota raiz "/", mostrar página de índice */
+  if (strcmp(path_only, "/") == 0) {
+    write(connection_fd, ok_response, strlen(ok_response));
+    
+    FILE* fp = fdopen(connection_fd, "w");
+    if (fp != NULL) {
+      fprintf(fp, "<!DOCTYPE html>\n");
+      fprintf(fp, "<html lang=\"pt-BR\">\n");
+      fprintf(fp, "<head>\n");
+      fprintf(fp, "    <meta charset=\"UTF-8\">\n");
+      fprintf(fp, "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
+      fprintf(fp, "    <title>Servidor de Módulos Linux</title>\n");
+      fprintf(fp, "    <style>\n");
+      fprintf(fp, "        body {\n");
+      fprintf(fp, "            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n");
+      fprintf(fp, "            margin: 0;\n");
+      fprintf(fp, "            padding: 20px;\n");
+      fprintf(fp, "            background: linear-gradient(135deg, #667eea 0%%, #764ba2 100%%);\n");
+      fprintf(fp, "            min-height: 100vh;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .container {\n");
+      fprintf(fp, "            max-width: 1200px;\n");
+      fprintf(fp, "            margin: 0 auto;\n");
+      fprintf(fp, "            background: white;\n");
+      fprintf(fp, "            border-radius: 15px;\n");
+      fprintf(fp, "            box-shadow: 0 20px 40px rgba(0,0,0,0.1);\n");
+      fprintf(fp, "            overflow: hidden;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .header {\n");
+      fprintf(fp, "            background: linear-gradient(45deg, #667eea, #764ba2);\n");
+      fprintf(fp, "            color: white;\n");
+      fprintf(fp, "            padding: 30px;\n");
+      fprintf(fp, "            text-align: center;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .header h1 {\n");
+      fprintf(fp, "            margin: 0;\n");
+      fprintf(fp, "            font-size: 2.5em;\n");
+      fprintf(fp, "            font-weight: 300;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .header p {\n");
+      fprintf(fp, "            margin: 10px 0 0 0;\n");
+      fprintf(fp, "            font-size: 1.2em;\n");
+      fprintf(fp, "            opacity: 0.9;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .content {\n");
+      fprintf(fp, "            padding: 30px;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .modules-grid {\n");
+      fprintf(fp, "            display: grid;\n");
+      fprintf(fp, "            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n");
+      fprintf(fp, "            gap: 20px;\n");
+      fprintf(fp, "            margin-top: 30px;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .module-card {\n");
+      fprintf(fp, "            background: #fff;\n");
+      fprintf(fp, "            border-radius: 10px;\n");
+      fprintf(fp, "            padding: 20px;\n");
+      fprintf(fp, "            box-shadow: 0 5px 15px rgba(0,0,0,0.1);\n");
+      fprintf(fp, "            transition: transform 0.3s ease, box-shadow 0.3s ease;\n");
+      fprintf(fp, "            border-left: 4px solid #667eea;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .module-card:hover {\n");
+      fprintf(fp, "            transform: translateY(-5px);\n");
+      fprintf(fp, "            box-shadow: 0 10px 25px rgba(0,0,0,0.15);\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .module-card h3 {\n");
+      fprintf(fp, "            color: #333;\n");
+      fprintf(fp, "            margin-top: 0;\n");
+      fprintf(fp, "            margin-bottom: 10px;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .module-card p {\n");
+      fprintf(fp, "            color: #666;\n");
+      fprintf(fp, "            margin-bottom: 15px;\n");
+      fprintf(fp, "            line-height: 1.5;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .module-link {\n");
+      fprintf(fp, "            display: inline-block;\n");
+      fprintf(fp, "            background: #667eea;\n");
+      fprintf(fp, "            color: white;\n");
+      fprintf(fp, "            text-decoration: none;\n");
+      fprintf(fp, "            padding: 10px 20px;\n");
+      fprintf(fp, "            border-radius: 5px;\n");
+      fprintf(fp, "            transition: background 0.3s ease;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .module-link:hover {\n");
+      fprintf(fp, "            background: #5a6fd8;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .status {\n");
+      fprintf(fp, "            display: inline-block;\n");
+      fprintf(fp, "            padding: 4px 8px;\n");
+      fprintf(fp, "            border-radius: 3px;\n");
+      fprintf(fp, "            font-size: 0.8em;\n");
+      fprintf(fp, "            font-weight: bold;\n");
+      fprintf(fp, "            margin-left: 10px;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .status.available {\n");
+      fprintf(fp, "            background: #d4edda;\n");
+      fprintf(fp, "            color: #155724;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "        .status.required {\n");
+      fprintf(fp, "            background: #fff3cd;\n");
+      fprintf(fp, "            color: #856404;\n");
+      fprintf(fp, "        }\n");
+      fprintf(fp, "    </style>\n");
+      fprintf(fp, "</head>\n");
+      fprintf(fp, "<body>\n");
+      fprintf(fp, "    <div class=\"container\">\n");
+      fprintf(fp, "        <div class=\"header\">\n");
+      fprintf(fp, "            <h1>🐧 Servidor de Módulos Linux</h1>\n");
+      fprintf(fp, "            <p>Sistema de gerenciamento e monitoramento do sistema operacional</p>\n");
+      fprintf(fp, "        </div>\n");
+      fprintf(fp, "        <div class=\"content\">\n");
+      fprintf(fp, "            <h2>📋 Módulos Disponíveis</h2>\n");
+      fprintf(fp, "            <div class=\"modules-grid\">\n");
+      
+      // Listar módulos dinamicamente
+      DIR *d = opendir(".");
+      struct dirent *dir;
+      if (d) {
+          while ((dir = readdir(d)) != NULL) {
+              if (strstr(dir->d_name, ".so") && strncmp(dir->d_name, "librust", 7) != 0) {
+                  // Pega o nome base do módulo (sem .so)
+                  char modname[128];
+                  strncpy(modname, dir->d_name, sizeof(modname));
+                  char *dot = strstr(modname, ".so");
+                  if (dot) *dot = 0;
+
+                  // Ignorar arquivos que não são módulos (ex: librust_video.so, etc)
+                  if (strcmp(modname, "server") == 0 || strcmp(modname, "librust_video") == 0)
+                      continue;
+
+                  // Montar título amigável (primeira letra maiúscula)
+                  char title[128];
+                  snprintf(title, sizeof(title), "%c%s", toupper(modname[0]), modname+1);
+
+                  fprintf(fp,
+                      "                <div class=\"module-card\">\n"
+                      "                    <h3>%s</h3>\n"
+                      "                    <a href=\"/%s\" class=\"module-link\">Acessar Módulo</a>\n"
+                      "                </div>\n",
+                      title, modname
+                  );
+              }
+          }
+          closedir(d);
+          fprintf(fp, "            </div>\n");
+      } else {
+          fprintf(fp, "<p>Não foi possível listar os módulos.</p>");
+      }
+      
+      fprintf(fp, "            <div style=\"margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px;\">\n");
+      fprintf(fp, "                <h3>ℹ️ Informações</h3>\n");
+      fprintf(fp, "                <p><strong>Como usar:</strong> Clique em qualquer módulo acima para acessá-lo.</p>\n");
+      fprintf(fp, "                <p><strong>Módulo de Diretórios:</strong> Use <code>/dirlist?path=/caminho/do/diretorio</code> para listar um diretório específico.</p>\n");
+      fprintf(fp, "                <p><strong>Terminal:</strong> O módulo terminal permite executar comandos bash diretamente no navegador.</p>\n");
+      fprintf(fp, "            </div>\n");
+      fprintf(fp, "        </div>\n");
+      fprintf(fp, "    </div>\n");
+      fprintf(fp, "</body>\n");
+      fprintf(fp, "</html>\n");
+      fflush(fp);
+    }
+    return;
+  }
 
   /* Make sure the requested page begins with a slash and does not
      contain any additional slashes -- we don't support any
