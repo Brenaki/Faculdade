@@ -1,0 +1,32 @@
+# Arquivos de build
+*.o
+*.so
+server
+target/
+Cargo.lock
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Documentação
+README.md
+*.md 
