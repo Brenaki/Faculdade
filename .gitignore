@@ -32,3 +32,6 @@ forca.c
 OAC/*/work
 
 SO/.venv
+/CG/03-08/nbproject/private/
+/CG/03-08/build/
+/CG/03-08/dist/
