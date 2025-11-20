@@ -1,0 +1,50 @@
+Num experimento para verificar os fatores que influenciam a qualidade de transmissão de dados (Kb/s) através da porta serial de microcomputadores com cabos longos, foram avaliados 4 comprimentos de cabos serial (10, 20, 30 e 40 metros). No sentido de descartar a influência do tamanho dos arquivos na qualidade de transmissão, foram transmitidos arquivos de 5 tamanhos (100, 200, 300, 400 e 500 Kbytes) em cada uma das conexões com os respectivos comprimentos de cabo, caracterizando um ensaio em blocos casualizados. A partir dos resultados na tabela abaixo, o que se pode concluir com um nível de 5% de significância sobre a influência dos comprimentos dos cabos seriais em transmissão de dados? (Dados fictícios) 																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+Comprimento Cabos	BLOCOS									Fontes de Variação	GL	SQ	QM	Fcal	p-valor 					
+	Tamanho do Arquivo									Comprimento dos cabos (tratamento)	3	3,11578	1,03859	6,3942	0,007793	rejeita H0	aplicar teste de média			
+Comprimento Cabos	100	200	300	400	500	T	Média			Modelo Linear	1	2,78222400000001	2,78222400000001	17,1291085207689	0,00137392428419086	rejeita H0	esse modelo tem efeito significante			
+10	3,76	4,02	4,32	4,96	4,96	22,02	4,404			Demais Modelos	2	0,333556000000081	0,16677800000004	1,02678952552975	0,387583991393643	aceita H0				
+20	4,01	4,48	4,16	4,4	5,76	22,81	4,562			Tamanho Arquivo (bloco)	4	3,09808	0,77452	4,7684	0,015533	rejeita H0	A velocidade de transmissão é afetada pelo tamanho de arquivo			  
+30	3,95	4,72	5,28	4,72	5,28	23,95	4,79			Resíduo	12	1,94912	0,16243							
+40	5,52	4,72	5,44	5,76	5,76	27,2	5,44			TOTAL	19	8,16298								
+B=	17,24	17,94	19,2	19,84	21,76															
+																				
+	C=	460,60802																		
+	Count=	20																		
+		TRAT (X)	VEL (Y)	X*Y	X^2	(X-MÉDIA)^2														
+		10	3,76	37,6	100	225														
+		20	4,01	80,2	400	25														
+		30	3,95	118,5	900	25														
+		40	5,52	220,8	1600	225														
+		10	4,02	40,2	100	225														
+		20	4,48	89,6	400	25														
+		30	4,72	141,6	900	25														
+		40	4,72	188,8	1600	225														
+		10	4,32	43,2	100	225														
+		20	4,16	83,2	400	25														
+		30	5,28	158,4	900	25														
+		40	5,44	217,6	1600	225														
+		10	4,96	49,6	100	225														
+		20	4,4	88	400	25														
+		30	4,72	141,6	900	25							TESTE para B0			TESTE para B1				
+		40	5,76	230,4	1600	225							H0: b0 = 0			H0: b1 = 0				
+		10	4,96	49,6	100	225							H1: b0 != 0			H1: b1 != 0				
+		20	5,76	115,2	400	25														
+		30	5,28	158,4	900	25							tcal=	17,9619671755895		tcal=	4,13873271917491			
+		40	5,76	230,4	1600	225							p.valor	4,87276293726459E-10	rejeita H0	p.valor	0,00137392428419086	rejeita H0		
+	TOTAL	500	95,98	2482,9	15000	2500														
+	MÉDIA	25	4,799	124,145	750	125								3,96 é diferente de 0			0,03336 é diferente de 0			
+																				
+	B1=	0,03336																		
+																				
+	B0=	3,965																		
+																				
+	R2=	0,892946228552699																		

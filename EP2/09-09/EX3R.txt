@@ -1,0 +1,111 @@
+------------------------------------------------------------------------
+Quadro da analise de variancia
+------------------------------------------------------------------------
+           GL     SQ      QM     Fc     Pr>Fc
+Tratamento  3 3.1158 1.03859 6.3942 0.0077926
+Bloco       4 3.0981 0.77452 4.7684 0.0155327
+Residuo    12 1.9491 0.16243                 
+Total      19 8.1630                         
+------------------------------------------------------------------------
+CV = 8.4 %
+
+------------------------------------------------------------------------
+Teste de normalidade dos residuos 
+valor-p:  0.07987729  	## H0 os dados seguem a distribuição normal
+			## H1 os dados não seguem a distribuição normal
+De acordo com o teste de Shapiro-Wilk a 5% de significancia, os residuos podem ser considerados normais.
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Teste de homogeneidade de variancia 
+valor-p:  0.6780144 	## h0 as variância de todos os dados são iguais
+			## h1 as variâncias de todos os dados são diferentes
+De acordo com o teste de oneillmathews a 5% de significancia, as variancias podem ser consideradas homogeneas.
+------------------------------------------------------------------------
+
+Ajuste de modelos polinomiais de regressao
+------------------------------------------------------------------------
+
+Modelo Linear 	Y = 3.96 + 0.0334*X
+=========================================
+   Estimativa Erro.padrao   tc    valor.p
+-----------------------------------------
+b0   3.9650     0.2207    17.9620    0		## H0: B0 = 0; H1: B0 != 0
+b1   0.0334     0.0081    4.1387  0.0014 	## H0: B1 = 0; H1: B1 !=0
+-----------------------------------------
+
+R2 do modelo linear
+--------
+0.892946
+--------
+
+Analise de variância do modelo linear
+===================================================
+                     GL   SQ     QM    Fc   valor.p
+---------------------------------------------------
+Efeito linear        1  2.7822 2.7822 17.13 0.00137	## H0: Efeito do modelo linear = 0; H1: Efeito do modelo linear != 0 (Linear explica quantidade significativa)
+Desvios de Regressão 2  0.3336 0.1668 1.03  0.38758	## H0: Efeito dos demais modelos = 0 (Não há mais modelos significantes); H1: Efeito dos demais modelos != 0
+Resíduos             12 1.9491 0.1624              
+---------------------------------------------------
+
+Verificar a imagem "Modelo Linear - Comprimento X Velocidade"
+
+------------------------------------------------------------------------
+
+Modelo quadrático Y = 4.58 - 0.0281x + 0.0012x^2
+=========================================
+   Estimativa Erro.padrao   tc    valor.p
+-----------------------------------------
+b0   4.5800     0.5018    9.1279     0   	## H0: b0 = 0; H1: b0 != 0
+b1  -0.0281     0.0458    -0.6148 0.5502 	## H0: b1 = 0; H1: b1 != 0
+b2   0.0012     0.0009    1.3649  0.1973 	## H0: b2 = 0; H1: b2 != 0
+-----------------------------------------
+
+R2 do modelo quadrático
+--------
+0.990058
+--------
+
+Analise de variância do modelo quadrático
+===================================================
+                     GL   SQ     QM    Fc   valor.p
+---------------------------------------------------
+Efeito linear        1  2.7822 2.7822 17.13 0.00137
+Efeito quadrático    1  0.3026 0.3026 1.86  0.19734	## H0: efeito modelo quadrático = 0; H1: efeito modelo quadrático != 0;
+Desvios de Regressão 1  0.0310 0.0310 0.19  0.67008
+Resíduos             12 1.9491 0.1624              
+---------------------------------------------------
+
+Verificar a imagem "Modelo Quadrático - Comprimento X Velocidade"
+------------------------------------------------------------------------
+
+Modelo cubico Y = 3.9640 + 0.0698x - 0.0032x^2 + 0.0001x^3
+=========================================
+   Estimativa Erro.padrao   tc    valor.p
+-----------------------------------------
+b0   3.9640     1.4972    2.6477  0.0213 	## H0: b0 = 0; H1: b0 != 0
+b1   0.0698     0.2290    0.3050  0.7656 	## H0: b1 = 0; H1: b1 != 0
+b2  -0.0032     0.0101    -0.3134 0.7594 	## H0: b2 = 0; H1: b2 != 0
+b3   0.0001     0.0001    0.4367  0.6701 	## H0: b3 = 0; H1: b3 != 0
+-----------------------------------------
+
+R2 do modelo cubico
+-
+1
+-
+
+Analise de variância do modelo cubico
+===================================================
+                     GL   SQ     QM    Fc   valor.p
+---------------------------------------------------
+Efeito linear        1  2.7822 2.7822 17.13 0.00137
+Efeito quadrático    1  0.3026 0.3026 1.86  0.19734	
+Efeito cubico        1  0.0310 0.0310 0.19  0.67008	## H0: efeito modelo cubico = 0; H1: efeito modelo cubico != 0;
+Desvios de Regressão 0    0      0      0      1   
+Resíduos             12 1.9491 0.1624              
+---------------------------------------------------
+
+Verificar a imagem "Modelo Cubico - Comprimento X Velocidade"
+------------------------------------------------------------------------
+
+
